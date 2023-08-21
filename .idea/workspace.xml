@@ -9,11 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="ListEmployesMBean.java and listEmployes.xhtml added, ListProduitsMBean.java modified">
+    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="fixing some warnings">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/commande/AddCommandeMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/commande/ListCommandesMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commande/addCommande.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commande/listCommandes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CategorieFacadeFromMySQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitCategorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitCategorie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/ListCategoriesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/ListCategoriesMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/ListClientsMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/ListClientsMBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/ListEmployesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/ListEmployesMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/ListMagasinsMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/ListMagasinsMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/ListMarquesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/ListMarquesMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/ListPersonnesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/ListPersonnesMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorie/listCategories.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categorie/listCategories.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/client/listClients.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/client/listClients.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/employe/addEmploye.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employe/addEmploye.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/employe/listEmployes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employe/listEmployes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/magasin/listMagasins.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/magasin/listMagasins.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/marque/listMarques.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/marque/listMarques.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/personne/listPersonnes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/personne/listPersonnes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/produit/listProduits.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/produit/listProduits.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +82,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/VenteVelos/src/main/webapp/employe",
+    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/VenteVelos/src/main/webapp/commande",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,21 +102,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\commande" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\employe" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\produit" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\java\sn\ept\git\dic2\ventevelos\mbeans\produit" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\magasin" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\java\sn\ept\git\dic2\ventevelos\mbeans\magasin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\personne" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sn.ept.git.dic2.ventevelos.mbeans.commande" />
       <recent name="sn.ept.git.dic2.ventevelos.mbeans.employe" />
       <recent name="sn.ept.git.dic2.ventevelos.mbeans" />
       <recent name="sn.ept.git.dic2.ventevelos.servletRequests" />
       <recent name="sn.ept.git.dic2.ventevelos.facades" />
-      <recent name="sn.ept.git.dic2.ventevelos.initializations" />
     </key>
   </component>
   <component name="RunManager" selected="GlassFish Server.GlassFish 7.0.0">
@@ -236,7 +255,8 @@
       <workItem from="1692443330163" duration="12150000" />
       <workItem from="1692481792114" duration="8170000" />
       <workItem from="1692521020649" duration="47849000" />
-      <workItem from="1692614186392" duration="19324000" />
+      <workItem from="1692614186392" duration="20150000" />
+      <workItem from="1692642461555" duration="10406000" />
     </task>
     <task id="LOCAL-00001" summary="21-08-2023 15:07">
       <created>1692630478732</created>
@@ -252,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692635519422</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixing some warnings">
+      <created>1692636401925</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692636401925</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +288,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="21-08-2023 15:07" />
     <MESSAGE value="ListEmployesMBean.java and listEmployes.xhtml added, ListProduitsMBean.java modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="ListEmployesMBean.java and listEmployes.xhtml added, ListProduitsMBean.java modified" />
+    <MESSAGE value="fixing some warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing some warnings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

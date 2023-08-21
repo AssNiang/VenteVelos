@@ -107,7 +107,7 @@
                 </p:column>
 
                 <p:column headerText="Actions" style="width: 200px;">
-                    <p:commandButton ajax="false" value="Edit" action="#{listClientsMbean.setClientToEdit(client)}" update=":formid:clientDetail" styleClass="ui-button-help me-2" process="@this" />
+                    <p:commandButton ajax="false" value="Edit" action="#{listClientsMbean.setSelectedClient(client)}" update=":formid:clientDetail" styleClass="ui-button-help me-2" process="@this" />
                     <p:commandButton ajax="false" value="Delete" action="#{listClientsMbean.delete(client)}" styleClass="ui-button-danger" update=":formid" process="@this" />
                 </p:column>
 

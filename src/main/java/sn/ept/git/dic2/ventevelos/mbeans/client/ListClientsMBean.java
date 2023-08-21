@@ -36,13 +36,6 @@ public class ListClientsMBean implements Serializable {
         this.clients = clients;
     }
 
-    public void setClientToEdit(Client clientToEdit) {
-        // Implement the logic to handle editing the person
-        // You might navigate to an edit page or set properties to control the edit flow
-        this.selectedClient = clientToEdit;
-        System.out.println("----" + clientToEdit);
-    }
-
     public void edit() {
         System.out.println("Editing the client : " + this.selectedClient);
         this.clientFacade.edit(this.selectedClient);

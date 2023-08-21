@@ -36,13 +36,6 @@ public class ListPersonnesMBean implements Serializable {
         this.personnes = personnes;
     }
 
-    public void setPersonneToEdit(Personne personneToEdit) {
-        // Implement the logic to handle editing the person
-        // You might navigate to an edit page or set properties to control the edit flow
-        this.selectedPersonne = personneToEdit;
-        System.out.println("----" + personneToEdit);
-    }
-
     public void edit() {
         System.out.println("Editing the personne : " + this.selectedPersonne);
         this.personneFacade.edit(this.selectedPersonne);

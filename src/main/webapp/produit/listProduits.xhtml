@@ -91,7 +91,7 @@
 
 
                 <p:column headerText="Actions" style="width: 200px;">
-                    <p:commandButton ajax="false" value="Edit" action="#{listProduitsMbean.setProduitToEdit(produit)}" update=":formid:produitDetail" styleClass="ui-button-help me-2" process="@this" />
+                    <p:commandButton ajax="false" value="Edit" action="#{listProduitsMbean.setSelectedProduit(produit)}" update=":formid:produitDetail" styleClass="ui-button-help me-2" process="@this" />
                     <p:commandButton ajax="false" value="Delete" action="#{listProduitsMbean.delete(produit)}" styleClass="ui-button-danger" update=":formid" process="@this" />
                 </p:column>
 

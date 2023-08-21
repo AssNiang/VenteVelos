@@ -46,10 +46,6 @@ public class ListProduitsMBean implements Serializable {
         this.produits = produits;
     }
 
-    public void setProduitToEdit(Produit produitToEdit) {
-        this.selectedProduit = produitToEdit;
-    }
-
     public Long getSelectedCategorieId() {
         return selectedCategorieId;
     }

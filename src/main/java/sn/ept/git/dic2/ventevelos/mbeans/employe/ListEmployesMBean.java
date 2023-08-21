@@ -42,10 +42,6 @@ public class ListEmployesMBean implements Serializable {
         this.employes = employes;
     }
 
-    public void setEmployeToEdit(Employe employeToEdit) {
-        this.selectedEmploye = employeToEdit;
-    }
-
     public Long getSelectedEmployeId() {
         return selectedEmployeId;
     }

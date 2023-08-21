@@ -57,7 +57,7 @@
 
 
                 <p:column headerText="Actions">
-                    <p:commandButton ajax="false" value="Edit" action="#{listMarquesMbean.setMarqueToEdit(marque)}" update=":formid:marqueDetail" styleClass="ui-button-help me-2" process="@this" />
+                    <p:commandButton ajax="false" value="Edit" action="#{listMarquesMbean.setSelectedMarque(marque)}" update=":formid:marqueDetail" styleClass="ui-button-help me-2" process="@this" />
                     <p:commandButton ajax="false" value="Delete" action="#{listMarquesMbean.delete(marque)}" styleClass="ui-button-danger" update=":formid" process="@this" />
                 </p:column>
 

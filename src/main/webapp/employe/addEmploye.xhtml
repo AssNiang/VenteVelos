@@ -67,7 +67,7 @@
                 <p:message for="actif" />
 
                 <p:outputLabel value="Magasin" for="shop" />
-                <p:selectOneMenu id="shop" value="#{addEmployeMBean.selectedMagasinId}" converter="#{entityConverter}" required="true">
+                <p:selectOneMenu id="shop" value="#{addEmployeMBean.selectedMagasinId}" converter="#{entityConverter}" required="true" requiredMessage="The shop is required">
                     <f:selectItems value="#{addEmployeMBean.allMagasins}" var="mag" itemLabel="#{mag.nom}" itemValue="#{mag.id}" />
                 </p:selectOneMenu>
                 <p:message for="shop" />

@@ -36,13 +36,6 @@ public class ListMagasinsMBean implements Serializable {
         this.magasins = magasins;
     }
 
-    public void setMagasinToEdit(Magasin magasinToEdit) {
-        // Implement the logic to handle editing the person
-        // You might navigate to an edit page or set properties to control the edit flow
-        this.selectedMagasin = magasinToEdit;
-        System.out.println("----" + magasinToEdit);
-    }
-
     public void edit() {
         System.out.println("Editing the magasin : " + this.selectedMagasin);
         this.magasinFacade.edit(this.selectedMagasin);

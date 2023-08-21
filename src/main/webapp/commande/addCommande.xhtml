@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: LENOVO
+  Date: 7/30/2023
+  Time: 10:02 AM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+<h:head>
+    <title>ajout-commande primefaces</title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <p:panel>
+            <!--            <p:messages></p:messages>-->
+
+            <h:panelGrid columns="3">
+                <p:outputLabel value="numéro" for="number" />
+                <p:inputText id="number" value="#{addCommandeMBean.commande.numero}" required="true" requiredMessage="The number is required" />
+                <p:message for="number" />
+
+                <p:outputLabel value="Statut" for="status" />
+                <p:inputText id="status" value="#{addCommandeMBean.commande.statut}" required="true" requiredMessage="The status is required" />
+                <p:message for="status" />
+
+                <p:outputLabel value="Date commande" for="command_date" />
+                <p:calendar id="command_date" value="#{addCommandeMBean.commande.date_commande}" showOn="button" pattern="MM/dd/yyyy HH:mm" required="true" requiredMessage="The command date is required" />
+                <p:message for="command_date" />
+
+                <p:outputLabel value="Date livraison" for="delivery_date" />
+                <p:calendar id="delivery_date" value="#{addCommandeMBean.commande.date_livraison}" showOn="button" pattern="MM/dd/yyyy HH:mm" required="true" requiredMessage="The delivery date is required" />
+                <p:message for="delivery_date" />
+
+                <p:outputLabel value="Client" for="client" />
+                <p:selectOneMenu id="client" value="#{addCommandeMBean.selectedClientId}" converter="#{entityConverter}" required="true" requiredMessage="The client is required">
+                    <f:selectItems value="#{addCommandeMBean.allClients}" var="client" itemLabel="#{client.prenom} #{client.nom}" itemValue="#{client.id}" />
+                </p:selectOneMenu>
+                <p:message for="client" />
+
+                <p:outputLabel value="Magasin" for="shop" />
+                <p:selectOneMenu id="shop" value="#{addCommandeMBean.selectedMagasinId}" converter="#{entityConverter}" required="true" requiredMessage="The shop is required">
+                    <f:selectItems value="#{addCommandeMBean.allMagasins}" var="magasin" itemLabel="#{magasin.nom}" itemValue="#{magasin.id}" />
+                </p:selectOneMenu>
+                <p:message for="shop" />
+
+                <p:outputLabel value="Employe" for="employe" />
+                <p:selectOneMenu id="employe" value="#{addCommandeMBean.selectedEmployeId}" converter="#{entityConverter}" required="true" requiredMessage="The employee is required">
+                    <f:selectItems value="#{addCommandeMBean.allEmployes}" var="emp" itemLabel="#{emp.prenom} #{emp.nom}" itemValue="#{emp.id}" />
+                </p:selectOneMenu>
+                <p:message for="employe" />
+
+
+            </h:panelGrid>
+
+            <f:facet name="header">Ajouter des commandes</f:facet>
+            <f:facet name="footer">
+                <p:commandButton ajax="false" value="submit" action="#{addCommandeMBean.save()}" styleClass="ui-button-success me-2"></p:commandButton>
+                <p:commandButton ajax="false" value="reset" immediate="true" styleClass="ui-button-danger"></p:commandButton>
+            </f:facet>
+        </p:panel>
+
+
+    </h:form>
+</h:body>
+
+</html>

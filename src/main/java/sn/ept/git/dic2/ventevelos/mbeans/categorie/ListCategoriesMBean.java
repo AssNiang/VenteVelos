@@ -36,13 +36,6 @@ public class ListCategoriesMBean implements Serializable {
         this.categories = categories;
     }
 
-    public void setCategorieToEdit(Categorie categorieToEdit) {
-        // Implement the logic to handle editing the person
-        // You might navigate to an edit page or set properties to control the edit flow
-        this.selectedCategorie = categorieToEdit;
-        System.out.println("----" + categorieToEdit);
-    }
-
     public void edit() {
         System.out.println("Editing the categorie : " + this.selectedCategorie);
         this.categorieFacade.edit(this.selectedCategorie);

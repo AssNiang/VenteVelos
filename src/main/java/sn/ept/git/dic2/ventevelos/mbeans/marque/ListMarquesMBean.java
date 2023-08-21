@@ -36,13 +36,6 @@ public class ListMarquesMBean implements Serializable {
         this.marques = marques;
     }
 
-    public void setMarqueToEdit(Marque marqueToEdit) {
-        // Implement the logic to handle editing the person
-        // You might navigate to an edit page or set properties to control the edit flow
-        this.selectedMarque = marqueToEdit;
-        System.out.println("----" + marqueToEdit);
-    }
-
     public void edit() {
         System.out.println("Editing the marque : " + this.selectedMarque);
         this.marqueFacade.edit(this.selectedMarque);

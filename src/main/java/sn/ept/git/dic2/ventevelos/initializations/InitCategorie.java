@@ -8,8 +8,6 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import sn.ept.git.dic2.ventevelos.entities.Categorie;
 import sn.ept.git.dic2.ventevelos.facades.CategorieFacade;
-import sn.ept.git.dic2.ventevelos.facades.CategorieFacadeFromMySQL;
-
 import java.util.Random;
 
 @Singleton
@@ -19,15 +17,13 @@ public class InitCategorie {
 //    private EntityManager entityManager;
     @EJB
     private CategorieFacade categorieFacade;
-    @EJB
-    private CategorieFacadeFromMySQL categorieFacadeFromMySQL;
 
     @PostConstruct
     public void init() {
         System.out.println("### Initializing Categorie Entities");
 
 
-        if (categorieFacadeFromMySQL.count()>0){
+        if (categorieFacade.count()>0){
             return;
         }
         System.out.println(categorieFacade.findAll());
