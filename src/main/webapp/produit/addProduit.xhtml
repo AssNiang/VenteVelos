@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: LENOVO
+  Date: 7/30/2023
+  Time: 10:02 AM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+<h:head>
+    <title>ajout-produit primefaces</title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <p:panel>
+            <!--            <p:messages></p:messages>-->
+
+            <h:panelGrid columns="3">
+                <p:outputLabel value="numéro" for="number" />
+                <p:inputText id="number" value="#{addProduitMBean.produit.id}" required="true" requiredMessage="The number is required" />
+                <p:message for="number" />
+
+                <p:outputLabel value="Nom" for="name" />
+                <p:inputText id="name" value="#{addProduitMBean.produit.nom}" required="true" requiredMessage="The name is required" />
+                <p:message for="name" />
+
+                <p:outputLabel value="Catégorie" for="categorie" />
+                <p:selectOneMenu id="categorie" value="#{addProduitMBean.selectedCategorieId}" converter="#{entityConverter}">
+                    <f:selectItems value="#{addProduitMBean.allCategories}" var="cat" itemLabel="#{cat.nom}" itemValue="#{cat.id}" />
+                </p:selectOneMenu>
+                <p:message for="categorie" />
+
+                <p:outputLabel value="Marque" for="marque" />
+                <p:selectOneMenu id="marque" value="#{addProduitMBean.selectedMarqueId}" converter="#{entityConverter}">
+                    <f:selectItems value="#{addProduitMBean.allMarques}" var="marq" itemLabel="#{marq.nom}" itemValue="#{marq.id}" />
+                </p:selectOneMenu>
+                <p:message for="marque" />
+
+                <p:outputLabel value="Année modèle" for="annee_model" />
+                <p:inputText id="annee_model" value="#{addProduitMBean.produit.annee_model}" required="true" requiredMessage="The model year is required" />
+                <p:message for="annee_model" />
+
+                <p:outputLabel value="Prix départ" for="prix_depart" />
+                <p:inputText id="prix_depart" value="#{addProduitMBean.produit.prix_depart}" required="true" requiredMessage="The price is required" />
+                <p:message for="prix_depart" />
+
+            </h:panelGrid>
+
+            <f:facet name="header">Ajouter des produits</f:facet>
+            <f:facet name="footer">
+                <p:commandButton ajax="false" value="submit" action="#{addProduitMBean.save()}" styleClass="ui-button-success me-2"></p:commandButton>
+                <p:commandButton ajax="false" value="reset" immediate="true" styleClass="ui-button-danger"></p:commandButton>
+            </f:facet>
+        </p:panel>
+
+
+    </h:form>
+</h:body>
+
+</html>

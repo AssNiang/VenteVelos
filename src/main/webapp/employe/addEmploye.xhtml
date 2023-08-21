@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: LENOVO
+  Date: 7/30/2023
+  Time: 10:02 AM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+<h:head>
+    <title>ajout-employe primefaces</title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <p:panel>
+            <!--            <p:messages></p:messages>-->
+
+            <h:panelGrid columns="3">
+                <p:outputLabel value="numéro" for="number" />
+                <p:inputText id="number" value="#{addEmployeMBean.employe.id}" required="true" requiredMessage="The number is required" />
+                <p:message for="number" />
+
+                <p:outputLabel value="Prénom" for="firstname" />
+                <p:inputText id="firstname" value="#{addEmployeMBean.employe.prenom}" required="true" requiredMessage="The firstname is required" />
+                <p:message for="firstname" />
+
+                <p:outputLabel value="Nom" for="lastname" />
+                <p:inputText id="lastname" value="#{addEmployeMBean.employe.nom}" required="true" requiredMessage="The lastname is required" />
+                <p:message for="lastname" />
+
+                <p:outputLabel value="Téléphone" for="phone" />
+                <p:inputText id="phone" value="#{addEmployeMBean.employe.telephone}" required="true" requiredMessage="The phone is required" />
+                <p:message for="phone" />
+
+                <p:outputLabel value="Email" for="email" />
+                <p:inputText id="email" value="#{addEmployeMBean.employe.email}" required="true" requiredMessage="The email is required" />
+                <p:message for="email" />
+
+                <p:outputLabel value="Adresse" for="address" />
+                <p:inputText id="address" value="#{addEmployeMBean.employe.adresse}" required="true" requiredMessage="The address is required" />
+                <p:message for="address" />
+
+                <p:outputLabel value="Ville" for="city" />
+                <p:inputText id="city" value="#{addEmployeMBean.employe.ville}" required="true" requiredMessage="The city is required" />
+                <p:message for="city" />
+
+                <p:outputLabel value="Etat" for="state" />
+                <p:inputText id="state" value="#{addEmployeMBean.employe.etat}" required="true" requiredMessage="The state is required" />
+                <p:message for="state" />
+
+                <p:outputLabel value="Code zip" for="zipCode" />
+                <p:inputText id="zipCode" value="#{addEmployeMBean.employe.code_zip}" required="true" requiredMessage="The zipCode is required" />
+                <p:message for="zipCode" />
+
+                <p:outputLabel value="Actif" for="actif" />
+                <p:inputText id="actif" value="#{addEmployeMBean.employe.actif}" required="true" requiredMessage="The 'actif' is required" />
+                <p:message for="actif" />
+
+                <p:outputLabel value="Magasin" for="shop" />
+                <p:selectOneMenu id="shop" value="#{addEmployeMBean.selectedMagasinId}" converter="#{entityConverter}" required="true">
+                    <f:selectItems value="#{addEmployeMBean.allMagasins}" var="mag" itemLabel="#{mag.nom}" itemValue="#{mag.id}" />
+                </p:selectOneMenu>
+                <p:message for="shop" />
+
+                <p:outputLabel value="Manager" for="manager" />
+                <p:selectOneMenu id="manager" value="#{addEmployeMBean.selectedEmployeId}" converter="#{entityConverter}">
+                    <f:selectItems value="#{addEmployeMBean.allEmployes}" var="emp" itemLabel="#{emp.prenom} #{emp.nom}" itemValue="#{emp.id}" />
+                </p:selectOneMenu>
+                <p:message for="manager" />
+
+            </h:panelGrid>
+
+            <f:facet name="header">Ajouter des employes</f:facet>
+            <f:facet name="footer">
+                <p:commandButton ajax="false" value="submit" action="#{addEmployeMBean.save()}" styleClass="ui-button-success me-2"></p:commandButton>
+                <p:commandButton ajax="false" value="reset" immediate="true" styleClass="ui-button-danger"></p:commandButton>
+            </f:facet>
+        </p:panel>
+
+    </h:form>
+</h:body>
+
+</html>

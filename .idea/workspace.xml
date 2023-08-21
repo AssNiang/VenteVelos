@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="VenteVelos:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/converters/entityConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/ArticleCommande.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Categorie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Commande.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Employe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Magasin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Marque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Personne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Produit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/AbstractFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ArticleCommandeFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CategorieFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CategorieFacadeFromMySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ClientFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CommandeFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/EmployeFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/MagasinFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/MarqueFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/PersonneFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ProduitFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/StockFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitCategorie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitMarque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitPersonne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitProduit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/ApplicationLifeCycleBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/EmailBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/StockReportBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/AddCategorieMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/ListCategoriesMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/AddClientMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/ListClientsMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/AddMagasinMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/ListMagasinsMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/AddMarqueMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/ListMarquesMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/AddPersonneMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/ListPersonnesMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/AddProduitMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ok.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/categorie/addCategorie.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/categorie/listCategories.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/client/addClient.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/client/listClients.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/employe/addEmploye.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/magasin/addMagasin.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/magasin/listMagasins.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/marque/addMarque.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/marque/listMarques.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/personne/addPersonne.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/personne/listPersonnes.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/produit/addProduit.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/produit/listProduits.xhtml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="jsf" />
+        <option value="facelets" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" value="" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RKVJoAtBjRB4Afg70MEXU4tsCF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/VenteVelos/src/main/webapp/employe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\employe" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\produit" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\java\sn\ept\git\dic2\ventevelos\mbeans\produit" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\magasin" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\java\sn\ept\git\dic2\ventevelos\mbeans\magasin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\personne" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sn.ept.git.dic2.ventevelos.mbeans.employe" />
+      <recent name="sn.ept.git.dic2.ventevelos.mbeans" />
+      <recent name="sn.ept.git.dic2.ventevelos.servletRequests" />
+      <recent name="sn.ept.git.dic2.ventevelos.facades" />
+      <recent name="sn.ept.git.dic2.ventevelos.initializations" />
+    </key>
+  </component>
+  <component name="RunManager" selected="GlassFish Server.GlassFish 7.0.0">
+    <configuration name="savePersonneTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sn.ept.git.dic2.ventevelos.savePersonneTest" />
+      <module name="VenteVelos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sn.ept.git.dic2.ventevelos.initializations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GlassFish 7.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/VenteVelos-1.0-SNAPSHOT" />
+      <deployment>
+        <artifact name="VenteVelos:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="VenteVelos:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="All in VenteVelos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VenteVelos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in VenteVelos" />
+        <item itemvalue="Application.savePersonneTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="" />
+      <created>1686998694315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686998694315</updated>
+      <workItem from="1686998695657" duration="4319000" />
+      <workItem from="1687019840112" duration="2695000" />
+      <workItem from="1687078263814" duration="5296000" />
+      <workItem from="1687084194678" duration="5820000" />
+      <workItem from="1687946148459" duration="16525000" />
+      <workItem from="1688164658414" duration="330000" />
+      <workItem from="1688228003236" duration="724000" />
+      <workItem from="1688295804379" duration="868000" />
+      <workItem from="1688297433091" duration="1318000" />
+      <workItem from="1688483707218" duration="119000" />
+      <workItem from="1689026567956" duration="668000" />
+      <workItem from="1689027976922" duration="7870000" />
+      <workItem from="1689952944178" duration="40000" />
+      <workItem from="1690707068807" duration="762000" />
+      <workItem from="1690707904206" duration="7043000" />
+      <workItem from="1690715921257" duration="325000" />
+      <workItem from="1690716744471" duration="711000" />
+      <workItem from="1690717635404" duration="894000" />
+      <workItem from="1690729421472" duration="2501000" />
+      <workItem from="1690731961355" duration="102000" />
+      <workItem from="1690791681433" duration="4000" />
+      <workItem from="1690819587319" duration="21000" />
+      <workItem from="1690846912006" duration="517000" />
+      <workItem from="1690849525125" duration="36000" />
+      <workItem from="1692356265514" duration="13225000" />
+      <workItem from="1692443330163" duration="12150000" />
+      <workItem from="1692481792114" duration="8170000" />
+      <workItem from="1692521020649" duration="47849000" />
+      <workItem from="1692614186392" duration="14071000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

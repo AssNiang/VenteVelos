@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+<h:head>
+    <title>list-produits</title>
+</h:head>
+
+<h:body>
+    <h:form id="formid">
+
+
+        <p:panelGrid columns="1">
+
+            <p:panel id="produitDetail"
+                     rendered="#{listProduitsMbean.selectedProduit != null }">
+                <h:panelGrid columns="3">
+                    <p:outputLabel value="Numéro" for="number" />
+                    <p:inputText id="number" value="#{listProduitsMbean.selectedProduit.id}" required="true" disabled="true" requiredMessage="The number is required" />
+                    <p:message for="number" />
+
+                    <p:outputLabel value="Nom" for="nom" />
+                    <p:inputText id="nom" value="#{listProduitsMbean.selectedProduit.nom}" required="true" requiredMessage="The nom is required" />
+                    <p:message for="nom" />
+
+                    <p:outputLabel value="Catégorie" for="categorie" />
+                    <p:selectOneMenu id="categorie" value="#{listProduitsMbean.selectedCategorieId}" converter="#{categorieConverter}">
+                        <f:selectItems value="#{listProduitsMbean.allCategories}" var="cat" itemLabel="#{cat.nom}" itemValue="#{cat.id}" />
+                    </p:selectOneMenu>
+                    <p:message for="categorie" />
+
+                    <p:outputLabel value="Marque" for="marque" />
+                    <p:selectOneMenu id="marque" value="#{listProduitsMbean.selectedMarqueId}" converter="#{marqueConverter}">
+                        <f:selectItems value="#{listProduitsMbean.allMarques}" var="marq" itemLabel="#{marq.nom}" itemValue="#{marq.id}" />
+                    </p:selectOneMenu>
+                    <p:message for="marque" />
+
+                    <p:outputLabel value="Année modèle" for="annee_model" />
+                    <p:inputText id="annee_model" value="#{listProduitsMbean.selectedProduit.annee_model}" required="true" requiredMessage="The model year is required" />
+                    <p:message for="annee_model" />
+
+                    <p:outputLabel value="Prix" for="prix_depart" />
+                    <p:inputText id="prix_depart" value="#{listProduitsMbean.selectedProduit.prix_depart}" required="true" requiredMessage="The model year is required" />
+                    <p:message for="prix_depart" />
+
+                </h:panelGrid>
+
+                <f:facet name="header">Modifier une produit</f:facet>
+                <f:facet name="footer">
+                    <p:commandButton ajax="false" value="Submit" action="#{listProduitsMbean.edit()}" styleClass="ui-button-success me-2"></p:commandButton>
+                    <p:commandButton ajax="false" value="Undo" action="#{listProduitsMbean.undo()}" styleClass="ui-button-danger"></p:commandButton>
+                </f:facet>
+            </p:panel>
+
+
+            <p:dataTable var="produit" value="#{listProduitsMbean.produits}" selectionMode="single"
+                         rows="12" paginator="true"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         scrollable="true" scrollWidth="100%"
+                         selection="#{listProduitsMbean.selectedProduit}" rowKey="#{produit.id}">
+<!--                <p:ajax event="rowSelect" update="formid:produitDetail" />-->
+
+                <f:facet name="header">Liste des Produits</f:facet>
+
+                <p:column headerText="numero" style="width: 100px;"> <!--numero=id-->
+                    <h:outputText value="#{produit.id}" />
+                </p:column>
+                <p:column headerText="nom" style="width: 100px;">
+                    <h:outputText value="#{produit.nom}" />
+                </p:column>
+                <p:column headerText="categorie" style="width: 100px;">
+                    <h:outputText value="#{produit.categorie.nom}" />
+                </p:column>
+                <p:column headerText="marque" style="width: 100px;">
+                    <h:outputText value="#{produit.marque.nom}" />
+                </p:column>
+                <p:column headerText="annee_model" style="width: 100px;">
+                    <h:outputText value="#{produit.annee_model}" />
+                </p:column>
+                <p:column headerText="prix_depart" style="width: 100px;">
+                    <h:outputText value="#{produit.prix_depart}" />
+                </p:column>
+
+
+                <p:column headerText="Actions" style="width: 200px;">
+                    <p:commandButton ajax="false" value="Edit" action="#{listProduitsMbean.setProduitToEdit(produit)}" update=":formid:produitDetail" styleClass="ui-button-help me-2" process="@this" />
+                    <p:commandButton ajax="false" value="Delete" action="#{listProduitsMbean.delete(produit)}" styleClass="ui-button-danger" update=":formid" process="@this" />
+                </p:column>
+
+            </p:dataTable>
+
+
+        </p:panelGrid>
+
+    </h:form>
+
+</h:body>
+</html>
