@@ -29,7 +29,7 @@ public class AddEmployeMBean implements Serializable {
     }
 
     private void initEmploye(){
-        employe.setId(25l);
+        employe.setId(25L);
         employe.setPrenom("Ousmane");
         employe.setNom("DIOP");
         employe.setTelephone("771234567");

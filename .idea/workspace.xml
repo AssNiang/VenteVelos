@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="21-08-2023 15:07">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/ListEmployesMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/employe/listEmployes.xhtml" afterDir="false" />
+    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="ListEmployesMBean.java and listEmployes.xhtml added, ListProduitsMBean.java modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/ListEmployesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/ListEmployesMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/employe/listEmployes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employe/listEmployes.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +236,7 @@
       <workItem from="1692443330163" duration="12150000" />
       <workItem from="1692481792114" duration="8170000" />
       <workItem from="1692521020649" duration="47849000" />
-      <workItem from="1692614186392" duration="18323000" />
+      <workItem from="1692614186392" duration="19324000" />
     </task>
     <task id="LOCAL-00001" summary="21-08-2023 15:07">
       <created>1692630478732</created>
@@ -246,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692630478732</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ListEmployesMBean.java and listEmployes.xhtml added, ListProduitsMBean.java modified">
+      <created>1692635519422</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692635519422</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +260,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="21-08-2023 15:07" />
-    <option name="LAST_COMMIT_MESSAGE" value="21-08-2023 15:07" />
+    <MESSAGE value="ListEmployesMBean.java and listEmployes.xhtml added, ListProduitsMBean.java modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="ListEmployesMBean.java and listEmployes.xhtml added, ListProduitsMBean.java modified" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

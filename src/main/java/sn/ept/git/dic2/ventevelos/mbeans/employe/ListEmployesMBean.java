@@ -5,7 +5,6 @@ import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
 import sn.ept.git.dic2.ventevelos.entities.Employe;
 import sn.ept.git.dic2.ventevelos.entities.Magasin;
-import sn.ept.git.dic2.ventevelos.entities.Produit;
 import sn.ept.git.dic2.ventevelos.facades.EmployeFacade;
 import sn.ept.git.dic2.ventevelos.facades.MagasinFacade;
 
