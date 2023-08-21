@@ -9,82 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/converters/entityConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/ArticleCommande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Categorie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Commande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Employe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Magasin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Marque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Personne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Produit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/AbstractFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ArticleCommandeFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CategorieFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CategorieFacadeFromMySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ClientFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CommandeFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/EmployeFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/MagasinFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/MarqueFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/PersonneFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ProduitFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/StockFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitCategorie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitMarque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitPersonne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitProduit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/ApplicationLifeCycleBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/EmailBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/StockReportBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/AddCategorieMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/ListCategoriesMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/AddClientMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/ListClientsMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/AddMagasinMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/ListMagasinsMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/AddMarqueMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/ListMarquesMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/AddPersonneMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/ListPersonnesMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/AddProduitMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ok.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/categorie/addCategorie.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/categorie/listCategories.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/client/addClient.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/client/listClients.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/employe/addEmploye.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/magasin/addMagasin.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/magasin/listMagasins.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/marque/addMarque.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/marque/listMarques.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/personne/addPersonne.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/personne/listPersonnes.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/produit/addProduit.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/produit/listProduits.xhtml" afterDir="false" />
+    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="21-08-2023 15:07">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/ListEmployesMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/employe/listEmployes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,12 +237,24 @@
       <workItem from="1692443330163" duration="12150000" />
       <workItem from="1692481792114" duration="8170000" />
       <workItem from="1692521020649" duration="47849000" />
-      <workItem from="1692614186392" duration="14071000" />
+      <workItem from="1692614186392" duration="18323000" />
     </task>
+    <task id="LOCAL-00001" summary="21-08-2023 15:07">
+      <created>1692630478732</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692630478732</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="21-08-2023 15:07" />
+    <option name="LAST_COMMIT_MESSAGE" value="21-08-2023 15:07" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

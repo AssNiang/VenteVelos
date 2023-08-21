@@ -90,20 +90,11 @@ public class AddEmployeMBean implements Serializable {
             employe.setManager(employeFacade.find(selectedEmployeId));
         }
 
-
         System.out.println("Saving the employe : " + employe);
-
-        try {
-            this.employeFacade.create(employe);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-
+        this.employeFacade.create(employe);
 
         this.message = "Employe " + employe.getPrenom() + ' ' + employe.getNom() + " saved successfully...";
-
-        System.out.println(employeFacade.findAll());
-        //this.employe = new Employe();
+        this.employe = new Employe();
     }
 
 }

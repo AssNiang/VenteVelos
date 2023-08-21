@@ -47,10 +47,7 @@ public class ListProduitsMBean implements Serializable {
     }
 
     public void setProduitToEdit(Produit produitToEdit) {
-        // Implement the logic to handle editing the person
-        // You might navigate to an edit page or set properties to control the edit flow
         this.selectedProduit = produitToEdit;
-        System.out.println("----" + produitToEdit);
     }
 
     public Long getSelectedCategorieId() {
