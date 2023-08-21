@@ -1,9 +1,6 @@
 package sn.ept.git.dic2.ventevelos.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 
 import java.io.Serializable;
@@ -11,6 +8,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Client")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Client extends Personne {
     private String telephone;
     @Email

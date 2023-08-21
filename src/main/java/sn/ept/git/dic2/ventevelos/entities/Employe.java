@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "Employe")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Employe extends Client {
     private Integer actif;
     @ManyToOne
