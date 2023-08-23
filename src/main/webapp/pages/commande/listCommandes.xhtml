@@ -3,7 +3,6 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
 
@@ -24,7 +23,7 @@
                      rendered="#{listCommandesMbean.selectedCommande != null }">
                 <h:panelGrid columns="3">
                     <p:outputLabel value="numéro" for="number" />
-                    <p:inputText id="number" value="#{listCommandesMbean.selectedCommande.numero}" required="true" requiredMessage="The number is required" />
+                    <p:inputText id="number" value="#{listCommandesMbean.selectedCommande.numero}" required="true" requiredMessage="The number is required" disabled="true" />
                     <p:message for="number" />
 
                     <p:outputLabel value="Statut" for="status" />
@@ -40,19 +39,19 @@
                     <p:message for="delivery_date" />
 
                     <p:outputLabel value="Client" for="client" />
-                    <p:selectOneMenu id="client" value="#{listCommandesMbean.selectedClientId}" converter="#{entityConverter}" required="true" requiredMessage="The client is required">
+                    <p:selectOneMenu id="client" value="#{listCommandesMbean.selectedClientId}" required="true" requiredMessage="The client is required">
                         <f:selectItems value="#{listCommandesMbean.allClients}" var="client" itemLabel="#{client.prenom} #{client.nom}" itemValue="#{client.id}" />
                     </p:selectOneMenu>
                     <p:message for="client" />
 
                     <p:outputLabel value="Magasin" for="shop" />
-                    <p:selectOneMenu id="shop" value="#{listCommandesMbean.selectedMagasinId}" converter="#{entityConverter}" required="true" requiredMessage="The shop is required">
+                    <p:selectOneMenu id="shop" value="#{listCommandesMbean.selectedMagasinId}" required="true" requiredMessage="The shop is required">
                         <f:selectItems value="#{listCommandesMbean.allMagasins}" var="magasin" itemLabel="#{magasin.nom}" itemValue="#{magasin.id}" />
                     </p:selectOneMenu>
                     <p:message for="shop" />
 
                     <p:outputLabel value="Employe" for="employe" />
-                    <p:selectOneMenu id="employe" value="#{listCommandesMbean.selectedEmployeId}" converter="#{entityConverter}" required="true" requiredMessage="The employee is required">
+                    <p:selectOneMenu id="employe" value="#{listCommandesMbean.selectedEmployeId}" required="true" requiredMessage="The employee is required">
                         <f:selectItems value="#{listCommandesMbean.allEmployes}" var="emp" itemLabel="#{emp.prenom} #{emp.nom}" itemValue="#{emp.id}" />
                     </p:selectOneMenu>
                     <p:message for="employe" />
@@ -61,8 +60,8 @@
 
                 <f:facet name="header">Modifier une commande</f:facet>
                 <f:facet name="footer">
-                    <p:commandButton ajax="false" value="Submit" action="#{listCommandesMbean.edit()}" styleClass="ui-button-success me-2"></p:commandButton>
-                    <p:commandButton ajax="false" value="Undo" action="#{listCommandesMbean.undo()}" styleClass="ui-button-danger"></p:commandButton>
+                    <p:commandButton ajax="false" value="Submit" action="#{listCommandesMbean.edit()}" styleClass="ui-button-success me-2" />
+                    <p:commandButton ajax="false" value="Undo" action="#{listCommandesMbean.undo()}" styleClass="ui-button-danger" />
                 </f:facet>
             </p:panel>
 

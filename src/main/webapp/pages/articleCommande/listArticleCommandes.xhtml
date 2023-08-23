@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+<h:head>
+    <title>list-articleCommandes</title>
+</h:head>
+
+<h:body>
+    <h:form id="formid">
+
+
+        <p:panelGrid columns="1">
+
+            <p:panel id="articleCommandeDetail"
+                     rendered="#{listArticleCommandesMbean.selectedArticleCommande != null }">
+                <h:panelGrid columns="3">
+                    <p:outputLabel value="Ligne" for="number" />
+                    <p:inputText id="number" value="#{listArticleCommandesMbean.selectedArticleCommande.ligne}" required="true" disabled="true" requiredMessage="The number is required" />
+                    <p:message for="number" />
+
+                    <p:outputLabel value="Commande" for="commande" />
+                    <p:selectOneMenu id="commande" value="#{listArticleCommandesMbean.selectedCommandeId}" required="true" requiredMessage="The command is required">
+                        <f:selectItems value="#{listArticleCommandesMbean.allCommandes}" var="commande" itemLabel="#{commande.client.prenom} n° (#{commande.numero})" itemValue="#{commande.numero}" />
+                    </p:selectOneMenu>
+                    <p:message for="commande" />
+
+                    <p:outputLabel value="Produit" for="produit" />
+                    <p:selectOneMenu id="produit" value="#{listArticleCommandesMbean.selectedProduitId}" required="true" requiredMessage="The product is required">
+                        <f:selectItems value="#{listArticleCommandesMbean.allProduits}" var="prod" itemLabel="#{prod.nom}" itemValue="#{prod.id}" />
+                    </p:selectOneMenu>
+                    <p:message for="produit" />
+
+                    <p:outputLabel value="Quantité" for="quantity" />
+                    <p:inputText id="quantity" value="#{listArticleCommandesMbean.selectedArticleCommande.quantite}" required="true" requiredMessage="The quantity is required" />
+                    <p:message for="quantity" />
+
+                    <p:outputLabel value="Prix" for="prix_depart" />
+                    <p:inputText id="prix_depart" value="#{listArticleCommandesMbean.selectedArticleCommande.prix_depart}" required="true" requiredMessage="The price is required" />
+                    <p:message for="prix_depart" />
+
+                    <p:outputLabel value="Remise" for="discount" />
+                    <p:inputText id="discount" value="#{listArticleCommandesMbean.selectedArticleCommande.remise}" required="true" requiredMessage="The discount is required" />
+                    <p:message for="discount" />
+
+                </h:panelGrid>
+
+                <f:facet name="header">Modifier une articleCommande</f:facet>
+                <f:facet name="footer">
+                    <p:commandButton ajax="false" value="Submit" action="#{listArticleCommandesMbean.edit()}" styleClass="ui-button-success me-2" />
+                    <p:commandButton ajax="false" value="Undo" action="#{listArticleCommandesMbean.undo()}" styleClass="ui-button-danger" />
+                </f:facet>
+            </p:panel>
+
+
+            <p:dataTable var="articleCommande" value="#{listArticleCommandesMbean.articleCommandes}" selectionMode="single"
+                         rows="12" paginator="true"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         scrollable="true" scrollWidth="100%"
+                         selection="#{listArticleCommandesMbean.selectedArticleCommande}" rowKey="#{articleCommande.ligne}">
+<!--                <p:ajax event="rowSelect" update="formid:articleCommandeDetail" />-->
+
+                <f:facet name="header">Liste des ArticleCommandes</f:facet>
+
+                <p:column headerText="ligne" style="width: 100px;"> <!--numero=id-->
+                    <h:outputText value="#{articleCommande.ligne}" />
+                </p:column>
+                <p:column headerText="commande" style="width: 100px;">
+                    <h:outputText value="#{articleCommande.commande.client.prenom} n° (#{articleCommande.commande.numero})" />
+                </p:column>
+                <p:column headerText="produit" style="width: 100px;">
+                    <h:outputText value="#{articleCommande.produit.nom}" />
+                </p:column>
+                <p:column headerText="quantité" style="width: 100px;">
+                    <h:outputText value="#{articleCommande.quantite}" />
+                </p:column>
+                <p:column headerText="prix_depart" style="width: 100px;">
+                    <h:outputText value="#{articleCommande.prix_depart}" />
+                </p:column>
+                <p:column headerText="remise" style="width: 100px;">
+                    <h:outputText value="#{articleCommande.remise}" />
+                </p:column>
+
+
+                <p:column headerText="Actions" style="width: 200px;">
+                    <p:commandButton ajax="false" value="Edit" action="#{listArticleCommandesMbean.setSelectedArticleCommande(articleCommande)}" update=":formid:articleCommandeDetail" styleClass="ui-button-help me-2" process="@this" />
+                    <p:commandButton ajax="false" value="Delete" action="#{listArticleCommandesMbean.delete(articleCommande)}" styleClass="ui-button-danger" update=":formid" process="@this" />
+                </p:column>
+
+            </p:dataTable>
+
+
+        </p:panelGrid>
+
+    </h:form>
+
+</h:body>
+</html>

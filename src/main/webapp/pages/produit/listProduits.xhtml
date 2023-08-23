@@ -3,7 +3,6 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
 
@@ -32,13 +31,13 @@
                     <p:message for="nom" />
 
                     <p:outputLabel value="Catégorie" for="categorie" />
-                    <p:selectOneMenu id="categorie" value="#{listProduitsMbean.selectedCategorieId}" converter="#{categorieConverter}">
+                    <p:selectOneMenu id="categorie" value="#{listProduitsMbean.selectedCategorieId}" required="true" requiredMessage="The category is required" >
                         <f:selectItems value="#{listProduitsMbean.allCategories}" var="cat" itemLabel="#{cat.nom}" itemValue="#{cat.id}" />
                     </p:selectOneMenu>
                     <p:message for="categorie" />
 
                     <p:outputLabel value="Marque" for="marque" />
-                    <p:selectOneMenu id="marque" value="#{listProduitsMbean.selectedMarqueId}" converter="#{marqueConverter}">
+                    <p:selectOneMenu id="marque" value="#{listProduitsMbean.selectedMarqueId}" required="true" requiredMessage="The mark is required" >
                         <f:selectItems value="#{listProduitsMbean.allMarques}" var="marq" itemLabel="#{marq.nom}" itemValue="#{marq.id}" />
                     </p:selectOneMenu>
                     <p:message for="marque" />
@@ -48,15 +47,15 @@
                     <p:message for="annee_model" />
 
                     <p:outputLabel value="Prix" for="prix_depart" />
-                    <p:inputText id="prix_depart" value="#{listProduitsMbean.selectedProduit.prix_depart}" required="true" requiredMessage="The model year is required" />
+                    <p:inputText id="prix_depart" value="#{listProduitsMbean.selectedProduit.prix_depart}" required="true" requiredMessage="The price is required" />
                     <p:message for="prix_depart" />
 
                 </h:panelGrid>
 
                 <f:facet name="header">Modifier une produit</f:facet>
                 <f:facet name="footer">
-                    <p:commandButton ajax="false" value="Submit" action="#{listProduitsMbean.edit()}" styleClass="ui-button-success me-2"></p:commandButton>
-                    <p:commandButton ajax="false" value="Undo" action="#{listProduitsMbean.undo()}" styleClass="ui-button-danger"></p:commandButton>
+                    <p:commandButton ajax="false" value="Submit" action="#{listProduitsMbean.edit()}" styleClass="ui-button-success me-2" />
+                    <p:commandButton ajax="false" value="Undo" action="#{listProduitsMbean.undo()}" styleClass="ui-button-danger" />
                 </f:facet>
             </p:panel>
 

@@ -3,7 +3,6 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
 
@@ -63,8 +62,8 @@
 
                 <f:facet name="header">Modifier une client</f:facet>
                 <f:facet name="footer">
-                    <p:commandButton ajax="false" value="Submit" action="#{listClientsMbean.edit()}" styleClass="ui-button-success me-2"></p:commandButton>
-                    <p:commandButton ajax="false" value="Undo" action="#{listClientsMbean.undo()}" styleClass="ui-button-danger"></p:commandButton>
+                    <p:commandButton ajax="false" value="Submit" action="#{listClientsMbean.edit()}" styleClass="ui-button-success me-2" />
+                    <p:commandButton ajax="false" value="Undo" action="#{listClientsMbean.undo()}" styleClass="ui-button-danger" />
                 </f:facet>
             </p:panel>
 

@@ -62,13 +62,13 @@
                     <p:message for="actif" />
 
                     <p:outputLabel value="Magasin" for="magasin" />
-                    <p:selectOneMenu id="magasin" value="#{listEmployesMbean.selectedMagasinId}" converter="#{entityConverter}">
+                    <p:selectOneMenu id="magasin" value="#{listEmployesMbean.selectedMagasinId}">
                         <f:selectItems value="#{listEmployesMbean.allMagasins}" var="mag" itemLabel="#{mag.nom}" itemValue="#{mag.id}" />
                     </p:selectOneMenu>
                     <p:message for="magasin" />
 
                     <p:outputLabel value="Manager" for="manager" />
-                    <p:selectOneMenu id="manager" value="#{listEmployesMbean.selectedEmployeId}" converter="#{entityConverter}">
+                    <p:selectOneMenu id="manager" value="#{listEmployesMbean.selectedEmployeId}">
                         <f:selectItems value="#{listEmployesMbean.allEmployes}" var="manager" itemLabel="#{manager.prenom} #{manager.nom}" itemValue="#{manager.id}" />
                     </p:selectOneMenu>
                     <p:message for="manager" />

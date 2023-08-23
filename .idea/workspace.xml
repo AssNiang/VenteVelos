@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="VenteVelos:war exploded" />
@@ -9,10 +12,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="mbeans and pages for &quot;commande&quot; added. list* modified.">
+    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="MBeans and pages for ArticleCommande and Stock added. Some other updates done.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/articleCommande/AddArticleCommandeMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/articleCommande/ListArticleCommandesMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/stock/AddStockMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/stock/ListStocksMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/addArticleCommande.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/listArticleCommandes.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/stock/addStock.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/stock/listStocks.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Employe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/converters/entityConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorie/addCategorie.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/categorie/addCategorie.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorie/listCategories.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/categorie/listCategories.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/client/addClient.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/addClient.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/client/listClients.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/listClients.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/commande/addCommande.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/addCommande.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/commande/listCommandes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/listCommandes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/employe/addEmploye.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/employe/addEmploye.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/employe/listEmployes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/employe/listEmployes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/magasin/addMagasin.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/magasin/addMagasin.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/magasin/listMagasins.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/magasin/listMagasins.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/marque/addMarque.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/marque/addMarque.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/marque/listMarques.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/marque/listMarques.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/personne/addPersonne.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personne/addPersonne.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/personne/listPersonnes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personne/listPersonnes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/produit/addProduit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/produit/addProduit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/produit/listProduits.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/produit/listProduits.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +90,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/VenteVelos/src/main/webapp/commande",
+    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/VenteVelos/src/main/webapp/stock",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +99,7 @@
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -82,21 +111,22 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\stock" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\articleCommande" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\commande" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\employe" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\produit" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\java\sn\ept\git\dic2\ventevelos\mbeans\produit" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\magasin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\pages" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\personne" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sn.ept.git.dic2.ventevelos.mbeans.stock" />
+      <recent name="sn.ept.git.dic2.ventevelos.mbeans.articleCommande" />
+      <recent name="sn.ept.git.dic2.ventevelos.converters" />
       <recent name="sn.ept.git.dic2.ventevelos.mbeans.commande" />
       <recent name="sn.ept.git.dic2.ventevelos.mbeans.employe" />
-      <recent name="sn.ept.git.dic2.ventevelos.mbeans" />
-      <recent name="sn.ept.git.dic2.ventevelos.servletRequests" />
-      <recent name="sn.ept.git.dic2.ventevelos.facades" />
     </key>
   </component>
   <component name="RunManager" selected="GlassFish Server.GlassFish 7.0.0">
@@ -236,7 +266,11 @@
       <workItem from="1692481792114" duration="8170000" />
       <workItem from="1692521020649" duration="47849000" />
       <workItem from="1692614186392" duration="20150000" />
-      <workItem from="1692642461555" duration="11888000" />
+      <workItem from="1692642461555" duration="17724000" />
+      <workItem from="1692667355788" duration="1161000" />
+      <workItem from="1692706095535" duration="3617000" />
+      <workItem from="1692721828966" duration="1029000" />
+      <workItem from="1692722888122" duration="16589000" />
     </task>
     <task id="LOCAL-00001" summary="21-08-2023 15:07">
       <created>1692630478732</created>
@@ -266,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692659081264</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="using the strategy JOINED for Inheritance with &quot;Client&quot; and &quot;Employe&quot; classes">
+      <created>1692660662571</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692660662571</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +318,9 @@
     <MESSAGE value="ListEmployesMBean.java and listEmployes.xhtml added, ListProduitsMBean.java modified" />
     <MESSAGE value="fixing some warnings" />
     <MESSAGE value="mbeans and pages for &quot;commande&quot; added. list* modified." />
-    <option name="LAST_COMMIT_MESSAGE" value="mbeans and pages for &quot;commande&quot; added. list* modified." />
+    <MESSAGE value="using the strategy JOINED for Inheritance with &quot;Client&quot; and &quot;Employe&quot; classes" />
+    <MESSAGE value="MBeans and pages for ArticleCommande and Stock added. Some other updates done." />
+    <option name="LAST_COMMIT_MESSAGE" value="MBeans and pages for ArticleCommande and Stock added. Some other updates done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

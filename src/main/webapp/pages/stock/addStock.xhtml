@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: LENOVO
+  Date: 7/30/2023
+  Time: 10:02 AM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+<h:head>
+    <title>ajout-stock primefaces</title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <p:panel>
+            <!--            <p:messages></p:messages>-->
+
+            <h:panelGrid columns="3">
+
+                <p:outputLabel value="Magasin" for="magasin" />
+                <p:selectOneMenu id="magasin" value="#{addStockMBean.selectedMagasinId}" required="true" requiredMessage="The shop is required">
+                    <f:selectItems value="#{addStockMBean.allMagasins}" var="magasin" itemLabel="#{magasin.nom}" itemValue="#{magasin.id}" />
+                </p:selectOneMenu>
+                <p:message for="magasin" />
+
+                <p:outputLabel value="Produit" for="produit" />
+                <p:selectOneMenu id="produit" value="#{addStockMBean.selectedProduitId}" required="true" requiredMessage="The product is required">
+                    <f:selectItems value="#{addStockMBean.allProduits}" var="prod" itemLabel="#{prod.nom}" itemValue="#{prod.id}" />
+                </p:selectOneMenu>
+                <p:message for="produit" />
+
+                <p:outputLabel value="Quantité" for="quantity" />
+                <p:inputText id="quantity" value="#{addStockMBean.stock.quantite}" required="true" requiredMessage="The quantity is required" />
+                <p:message for="quantity" />
+
+            </h:panelGrid>
+
+            <f:facet name="header">Ajouter des stocks</f:facet>
+            <f:facet name="footer">
+                <p:commandButton ajax="false" value="submit" action="#{addStockMBean.save()}" styleClass="ui-button-success me-2" />
+                <p:commandButton ajax="false" value="reset" immediate="true" styleClass="ui-button-danger" />
+            </f:facet>
+        </p:panel>
+
+
+    </h:form>
+</h:body>
+
+</html>

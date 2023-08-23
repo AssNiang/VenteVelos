@@ -35,13 +35,13 @@
                 <p:message for="name" />
 
                 <p:outputLabel value="Catégorie" for="categorie" />
-                <p:selectOneMenu id="categorie" value="#{addProduitMBean.selectedCategorieId}" converter="#{entityConverter}">
+                <p:selectOneMenu id="categorie" value="#{addProduitMBean.selectedCategorieId}" required="true" requiredMessage="The category is required">
                     <f:selectItems value="#{addProduitMBean.allCategories}" var="cat" itemLabel="#{cat.nom}" itemValue="#{cat.id}" />
                 </p:selectOneMenu>
                 <p:message for="categorie" />
 
                 <p:outputLabel value="Marque" for="marque" />
-                <p:selectOneMenu id="marque" value="#{addProduitMBean.selectedMarqueId}" converter="#{entityConverter}">
+                <p:selectOneMenu id="marque" value="#{addProduitMBean.selectedMarqueId}" required="true" requiredMessage="The mark is required">
                     <f:selectItems value="#{addProduitMBean.allMarques}" var="marq" itemLabel="#{marq.nom}" itemValue="#{marq.id}" />
                 </p:selectOneMenu>
                 <p:message for="marque" />
@@ -58,8 +58,8 @@
 
             <f:facet name="header">Ajouter des produits</f:facet>
             <f:facet name="footer">
-                <p:commandButton ajax="false" value="submit" action="#{addProduitMBean.save()}" styleClass="ui-button-success me-2"></p:commandButton>
-                <p:commandButton ajax="false" value="reset" immediate="true" styleClass="ui-button-danger"></p:commandButton>
+                <p:commandButton ajax="false" value="submit" action="#{addProduitMBean.save()}" styleClass="ui-button-success me-2" />
+                <p:commandButton ajax="false" value="reset" immediate="true" styleClass="ui-button-danger" />
             </f:facet>
         </p:panel>
 

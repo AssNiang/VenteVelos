@@ -67,13 +67,13 @@
                 <p:message for="actif" />
 
                 <p:outputLabel value="Magasin" for="shop" />
-                <p:selectOneMenu id="shop" value="#{addEmployeMBean.selectedMagasinId}" converter="#{entityConverter}" required="true" requiredMessage="The shop is required">
+                <p:selectOneMenu id="shop" value="#{addEmployeMBean.selectedMagasinId}" required="true" requiredMessage="The shop is required">
                     <f:selectItems value="#{addEmployeMBean.allMagasins}" var="mag" itemLabel="#{mag.nom}" itemValue="#{mag.id}" />
                 </p:selectOneMenu>
                 <p:message for="shop" />
 
                 <p:outputLabel value="Manager" for="manager" />
-                <p:selectOneMenu id="manager" value="#{addEmployeMBean.selectedEmployeId}" converter="#{entityConverter}">
+                <p:selectOneMenu id="manager" value="#{addEmployeMBean.selectedEmployeId}">
                     <f:selectItems value="#{addEmployeMBean.allEmployes}" var="emp" itemLabel="#{emp.prenom} #{emp.nom}" itemValue="#{emp.id}" />
                 </p:selectOneMenu>
                 <p:message for="manager" />
@@ -82,8 +82,8 @@
 
             <f:facet name="header">Ajouter des employes</f:facet>
             <f:facet name="footer">
-                <p:commandButton ajax="false" value="submit" action="#{addEmployeMBean.save()}" styleClass="ui-button-success me-2"></p:commandButton>
-                <p:commandButton ajax="false" value="reset" immediate="true" styleClass="ui-button-danger"></p:commandButton>
+                <p:commandButton ajax="false" value="submit" action="#{addEmployeMBean.save()}" styleClass="ui-button-success me-2" />
+                <p:commandButton ajax="false" value="reset" immediate="true" styleClass="ui-button-danger" />
             </f:facet>
         </p:panel>
 
