@@ -68,30 +68,38 @@
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          scrollable="true" scrollWidth="100%"
+                         id="produitTable"
                          selection="#{listProduitsMbean.selectedProduit}" rowKey="#{produit.id}">
-<!--                <p:ajax event="rowSelect" update="formid:produitDetail" />-->
+
+                <p:ajax event="rowSelect" listener="#{listProduitsMbean.onRowSelect}" update="formid:produitDetail2"
+                        oncomplete="PF('produitDialog').show()" />
 
                 <f:facet name="header">Liste des Produits</f:facet>
 
-                <p:column headerText="numero" style="width: 100px;"> <!--numero=id-->
+                <p:column headerText="numero" style="width: 100px;"
+                          sortBy="#{produit.id}" filterBy="#{produit.id}"> <!--numero=id-->
                     <h:outputText value="#{produit.id}" />
                 </p:column>
-                <p:column headerText="nom" style="width: 100px;">
+                <p:column headerText="nom" style="width: 100px;"
+                          sortBy="#{produit.nom}" filterBy="#{produit.nom}">
                     <h:outputText value="#{produit.nom}" />
                 </p:column>
-                <p:column headerText="categorie" style="width: 100px;">
+                <p:column headerText="categorie" style="width: 100px;"
+                          sortBy="#{produit.categorie.nom}" filterBy="#{produit.categorie.nom}">
                     <h:outputText value="#{produit.categorie.nom}" />
                 </p:column>
-                <p:column headerText="marque" style="width: 100px;">
+                <p:column headerText="marque" style="width: 100px;"
+                          sortBy="#{produit.marque.nom}" filterBy="#{produit.marque.nom}">
                     <h:outputText value="#{produit.marque.nom}" />
                 </p:column>
-                <p:column headerText="annee_model" style="width: 100px;">
+                <p:column headerText="annee_model" style="width: 100px;"
+                          sortBy="#{produit.annee_model}" filterBy="#{produit.annee_model}">
                     <h:outputText value="#{produit.annee_model}" />
                 </p:column>
-                <p:column headerText="prix_depart" style="width: 100px;">
+                <p:column headerText="prix_depart" style="width: 100px;"
+                          sortBy="#{produit.prix_depart}" filterBy="#{produit.prix_depart}">
                     <h:outputText value="#{produit.prix_depart}" />
                 </p:column>
-
 
                 <p:column headerText="Actions" style="width: 200px;">
                     <p:commandButton ajax="false" value="Edit" action="#{listProduitsMbean.setSelectedProduit(produit)}" update=":formid:produitDetail" styleClass="ui-button-help me-2" process="@this" />
@@ -99,6 +107,33 @@
                 </p:column>
 
             </p:dataTable>
+
+            <p:dialog header="Product Detail" widgetVar="productDialog" modal="true" showEffect="fade"
+                      hideEffect="fade" resizable="false">
+                <p:outputPanel id="produitDetail2" styleClass="text-center">
+                    <p:panelGrid columns="2" rendered="#{not empty listProduitsMbean.selectedProduit}"
+                            columnClasses="label,value">
+
+                        <h:outputText value="Numero:"/>
+                        <h:outputText value="#{listProduitsMbean.selectedProduit.id}"/>
+
+                        <h:outputText value="Nom:"/>
+                        <h:outputText value="#{listProduitsMbean.selectedProduit.nom}"/>
+
+                        <h:outputText value="Categorie:"/>
+                        <h:outputText value="#{listProduitsMbean.selectedProduit.categorie.nom}"/>
+
+                        <h:outputText value="Marque:"/>
+                        <h:outputText value="#{listProduitsMbean.selectedProduit.marque.nom}"/>
+
+                        <h:outputText value="Annee modele:"/>
+                        <h:outputText value="#{listProduitsMbean.selectedProduit.annee_model}"/>
+
+                        <h:outputText value="Prix depart:"/>
+                        <h:outputText value="#{listProduitsMbean.selectedProduit.prix_depart}"/>
+                    </p:panelGrid>
+                </p:outputPanel>
+            </p:dialog>
 
 
         </p:panelGrid>

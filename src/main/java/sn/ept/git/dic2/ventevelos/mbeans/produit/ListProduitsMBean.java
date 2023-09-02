@@ -1,8 +1,11 @@
 package sn.ept.git.dic2.ventevelos.mbeans.produit;
 
 import jakarta.ejb.EJB;
+import jakarta.faces.application.FacesMessage;
+import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
+import org.primefaces.event.SelectEvent;
 import sn.ept.git.dic2.ventevelos.entities.Categorie;
 import sn.ept.git.dic2.ventevelos.entities.Marque;
 import sn.ept.git.dic2.ventevelos.entities.Produit;
@@ -97,5 +100,10 @@ public class ListProduitsMBean implements Serializable {
         // update the displayed rows
         produits = produitFacade.findAll();
         this.selectedProduit = null;
+    }
+
+    public void onRowSelect(SelectEvent<Produit> event) {
+        FacesMessage msg = new FacesMessage("Product Selected", String.valueOf(event.getObject().getId()));
+        FacesContext.getCurrentInstance().addMessage(null, msg);
     }
 }
