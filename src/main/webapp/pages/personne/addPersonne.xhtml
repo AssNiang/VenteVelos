@@ -12,7 +12,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
 
@@ -21,6 +22,8 @@
 </h:head>
 
 <h:body>
+    <ui:include src="/WEB-INF/menu.xhtml" />
+
     <h:form>
         <p:panel>
             <!--            <p:messages></p:messages>-->

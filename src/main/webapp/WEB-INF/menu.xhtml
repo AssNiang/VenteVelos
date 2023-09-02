@@ -1,0 +1,116 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+
+    <style>
+        .noBorders tr, .noBorders td {
+            background: none !important;
+            border: none !important;
+        }
+    </style>
+
+    <div class="card">
+        <p:panelGrid columns="10" styleClass="noBorders">
+            <p:outputPanel>
+                <p:commandButton id="personne" value="Personne" type="button" icon="pi pi-user"/>
+                <p:menu overlay="true" trigger="personne" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout Personne" url="/VenteVelos-1.0-SNAPSHOT/pages/personne/addPersonne.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste Personnes" url="/VenteVelos-1.0-SNAPSHOT/pages/personne/listPersonnes.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+            <p:outputPanel>
+                <p:commandButton id="client" value="Client" type="button" icon="pi pi-users"/>
+                <p:menu overlay="true" trigger="client" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout Client" url="/VenteVelos-1.0-SNAPSHOT/pages/client/addClient.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste Clients" url="/VenteVelos-1.0-SNAPSHOT/pages/client/listClients.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+            <p:outputPanel>
+                <p:commandButton id="employe" value="Employe" type="button" icon="pi pi-user-plus"/>
+                <p:menu overlay="true" trigger="employe" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout Employe" url="/VenteVelos-1.0-SNAPSHOT/pages/employe/addEmploye.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste Employes" url="/VenteVelos-1.0-SNAPSHOT/pages/employe/listEmployes.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+            <p:outputPanel>
+                <p:commandButton id="categorie" value="Categorie" type="button" icon="pi pi-tags"/>
+                <p:menu overlay="true" trigger="categorie" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout Categorie" url="/VenteVelos-1.0-SNAPSHOT/pages/categorie/addCategorie.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste Categories" url="/VenteVelos-1.0-SNAPSHOT/pages/categorie/listCategories.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+            <p:outputPanel>
+                <p:commandButton id="marque" value="Marque" type="button" icon="pi pi-flag"/>
+                <p:menu overlay="true" trigger="marque" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout Marque" url="/VenteVelos-1.0-SNAPSHOT/pages/marque/addMarque.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste Marques" url="/VenteVelos-1.0-SNAPSHOT/pages/marque/listMarques.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+            <p:outputPanel>
+                <p:commandButton id="produit" value="Produit" type="button" icon="pi pi-box"/>
+                <p:menu overlay="true" trigger="produit" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout Produit" url="/VenteVelos-1.0-SNAPSHOT/pages/produit/addProduit.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste Produits" url="/VenteVelos-1.0-SNAPSHOT/pages/produit/listProduits.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+            <p:outputPanel>
+                <p:commandButton id="magasin" value="Magasin" type="button" icon="pi pi-building"/>
+                <p:menu overlay="true" trigger="magasin" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout Magasin" url="/VenteVelos-1.0-SNAPSHOT/pages/magasin/addMagasin.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste Magasins" url="/VenteVelos-1.0-SNAPSHOT/pages/magasin/listMagasins.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+            <p:outputPanel>
+                <p:commandButton id="commande" value="Commande" type="button" icon="pi pi-shopping-cart"/>
+                <p:menu overlay="true" trigger="commande" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout Commande" url="/VenteVelos-1.0-SNAPSHOT/pages/commande/addCommande.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste Commandes" url="/VenteVelos-1.0-SNAPSHOT/pages/commande/listCommandes.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+            <p:outputPanel>
+                <p:commandButton id="articleCommande" value="Article Commande" type="button" icon="pi pi-wallet"/>
+                <p:menu overlay="true" trigger="articleCommande" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout ArticleCommande" url="/VenteVelos-1.0-SNAPSHOT/pages/articleCommande/addArticleCommande.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste ArticleCommandes" url="/VenteVelos-1.0-SNAPSHOT/pages/articleCommande/listArticleCommandes.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+            <p:outputPanel>
+                <p:commandButton id="stock" value="Stock" type="button" icon="pi pi-database"/>
+                <p:menu overlay="true" trigger="stock" my="left top" at="left bottom">
+                    <p:menuitem value="Ajout Stock" url="/VenteVelos-1.0-SNAPSHOT/pages/stock/addStock.xhtml" ajax="false"
+                                icon="pi pi-plus-circle"/>
+                    <p:menuitem value="Liste Stocks" url="/VenteVelos-1.0-SNAPSHOT/pages/stock/listStocks.xhtml" ajax="false"
+                                icon="pi pi-list"/>
+                </p:menu>
+            </p:outputPanel>
+
+        </p:panelGrid>
+
+
+    </div>
+
+
+</ui:composition>
+
+
+

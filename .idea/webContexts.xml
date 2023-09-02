@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/webapp/ajoutPersonne.xhtml" value="file://$PROJECT_DIR$/src/main/webapp" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/employe/listEmployes.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/employe" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/pages/personne/listPersonnes.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/pages/personne" />
       </map>
     </option>
   </component>

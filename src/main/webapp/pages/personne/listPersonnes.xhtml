@@ -4,7 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
 
@@ -13,10 +14,11 @@
 </h:head>
 
 <h:body>
+    <ui:include src="/WEB-INF/menu.xhtml" />
+
     <h:form id="formid">
 
-
-        <p:panelGrid columns="1">
+        <p:panelGrid columns="1" styleClass="bg-success">
             <p:panel id="personneDetail"
                      rendered="#{listPersonnesMbean.selectedPersonne != null }">
                 <h:panelGrid columns="3">
@@ -59,7 +61,6 @@
                     <h:outputText value="#{personne.nom}" />
                 </p:column>
 
-
                 <p:column headerText="Actions">
                     <p:commandButton ajax="false" value="Edit" action="#{listPersonnesMbean.setSelectedPersonne(personne)}" update=":formid:personneDetail" styleClass="ui-button-help me-2" process="@this" />
                     <p:commandButton ajax="false" value="Delete" action="#{listPersonnesMbean.delete(personne)}" styleClass="ui-button-danger" update=":formid" process="@this" />
@@ -67,8 +68,8 @@
 
             </p:dataTable>
 
-
         </p:panelGrid>
+
 
     </h:form>
 

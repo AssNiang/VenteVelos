@@ -13,34 +13,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="MBeans and pages for ArticleCommande and Stock added. Some other updates done.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/articleCommande/AddArticleCommandeMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/articleCommande/ListArticleCommandesMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/stock/AddStockMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/stock/ListStocksMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/addArticleCommande.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/listArticleCommandes.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/stock/addStock.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/stock/listStocks.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menu.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/converters/entityConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorie/addCategorie.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/categorie/addCategorie.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorie/listCategories.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/categorie/listCategories.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/client/addClient.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/addClient.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/client/listClients.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/listClients.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/commande/addCommande.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/addCommande.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/commande/listCommandes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/listCommandes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employe/addEmploye.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/employe/addEmploye.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employe/listEmployes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/employe/listEmployes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/magasin/addMagasin.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/magasin/addMagasin.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/magasin/listMagasins.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/magasin/listMagasins.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/marque/addMarque.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/marque/addMarque.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/marque/listMarques.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/marque/listMarques.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/personne/addPersonne.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personne/addPersonne.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/personne/listPersonnes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personne/listPersonnes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/produit/addProduit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/produit/addProduit.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/produit/listProduits.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/produit/listProduits.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/addArticleCommande.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/addArticleCommande.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/listArticleCommandes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/listArticleCommandes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/categorie/addCategorie.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/categorie/addCategorie.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/categorie/listCategories.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/categorie/listCategories.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/client/addClient.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/addClient.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/client/listClients.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/listClients.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/commande/addCommande.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/addCommande.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/commande/listCommandes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/listCommandes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/employe/addEmploye.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/employe/addEmploye.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/employe/listEmployes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/employe/listEmployes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/magasin/addMagasin.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/magasin/addMagasin.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/marque/addMarque.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/marque/addMarque.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/personne/addPersonne.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personne/addPersonne.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/personne/listPersonnes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personne/listPersonnes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/produit/addProduit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/produit/addProduit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/produit/listProduits.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/produit/listProduits.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/stock/addStock.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/stock/addStock.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/stock/listStocks.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/stock/listStocks.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +71,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2RKVJoAtBjRB4Afg70MEXU4tsCF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -90,13 +88,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/VenteVelos/src/main/webapp/stock",
+    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/VenteVelos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -111,13 +109,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\stock" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\articleCommande" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\commande" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\employe" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\produit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\pages" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\personne" />
     </key>
@@ -270,7 +269,10 @@
       <workItem from="1692667355788" duration="1161000" />
       <workItem from="1692706095535" duration="3617000" />
       <workItem from="1692721828966" duration="1029000" />
-      <workItem from="1692722888122" duration="16589000" />
+      <workItem from="1692722888122" duration="16930000" />
+      <workItem from="1693507222599" duration="1293000" />
+      <workItem from="1693573554503" duration="15823000" />
+      <workItem from="1693605544216" duration="9379000" />
     </task>
     <task id="LOCAL-00001" summary="21-08-2023 15:07">
       <created>1692630478732</created>
@@ -307,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692660662571</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="MBeans and pages for ArticleCommande and Stock added. Some other updates done.">
+      <created>1692753020539</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692753020539</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
