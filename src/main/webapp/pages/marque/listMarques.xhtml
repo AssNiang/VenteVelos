@@ -43,6 +43,7 @@
             <p:dataTable var="marque" value="#{listMarquesMbean.marques}" selectionMode="single"
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginatorPosition="bottom"
                          selection="#{listMarquesMbean.selectedMarque}" rowKey="#{marque.id}">
 <!--                <p:ajax event="rowSelect" update="formid:marqueDetail" />-->
 

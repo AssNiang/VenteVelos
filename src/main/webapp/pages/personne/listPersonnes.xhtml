@@ -47,6 +47,7 @@
             <p:dataTable var="personne" value="#{listPersonnesMbean.personnes}" selectionMode="single"
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginatorPosition="bottom"
                          selection="#{listPersonnesMbean.selectedPersonne}" rowKey="#{personne.id}">
 
                 <f:facet name="header">Liste des Personnes</f:facet>

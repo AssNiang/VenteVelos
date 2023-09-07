@@ -67,6 +67,7 @@
             <p:dataTable var="articleCommande" value="#{listArticleCommandesMbean.articleCommandes}" selectionMode="single"
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginatorPosition="bottom"
                          scrollable="true" scrollWidth="100%"
                          selection="#{listArticleCommandesMbean.selectedArticleCommande}" rowKey="#{articleCommande.ligne}">
 <!--                <p:ajax event="rowSelect" update="formid:articleCommandeDetail" />-->

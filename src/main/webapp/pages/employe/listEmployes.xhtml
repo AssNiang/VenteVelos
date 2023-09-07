@@ -90,6 +90,7 @@
             <p:dataTable var="employe" value="#{listEmployesMbean.employes}" selectionMode="single"
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginatorPosition="bottom"
                          scrollable="true" scrollWidth="100%"
                          selection="#{listEmployesMbean.selectedEmploye}" rowKey="#{employe.id}">
 <!--                <p:ajax event="rowSelect" update="formid:employeDetail" />-->

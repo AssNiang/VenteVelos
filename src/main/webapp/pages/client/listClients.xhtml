@@ -75,6 +75,7 @@
             <p:dataTable var="client" value="#{listClientsMbean.clients}" selectionMode="single"
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginatorPosition="bottom"
                          scrollable="true" scrollWidth="100%"
                          selection="#{listClientsMbean.selectedClient}" rowKey="#{client.id}">
 <!--                <p:ajax event="rowSelect" update="formid:clientDetail" />-->

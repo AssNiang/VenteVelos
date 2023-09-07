@@ -45,6 +45,7 @@
             <p:dataTable var="categorie" value="#{listCategoriesMbean.categories}" selectionMode="single"
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginatorPosition="bottom"
                          selection="#{listCategoriesMbean.selectedCategorie}" rowKey="#{categorie.id}">
 
                 <f:facet name="header">Liste des Categories</f:facet>

@@ -71,6 +71,7 @@
             <p:dataTable var="magasin" value="#{listMagasinsMbean.magasins}" selectionMode="single"
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginatorPosition="bottom"
                          scrollable="true" scrollWidth="100%"
                          selection="#{listMagasinsMbean.selectedMagasin}" rowKey="#{magasin.id}">
 <!--                <p:ajax event="rowSelect" update="formid:magasinDetail" />-->

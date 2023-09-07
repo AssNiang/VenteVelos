@@ -64,17 +64,26 @@
             </p:panel>
 
 
-            <p:dataTable var="produit" value="#{listProduitsMbean.produits}" selectionMode="single"
+            <p:dataTable var="produit" widgetVar="dtProducts" value="#{listProduitsMbean.produits}" selectionMode="single"
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
-                         scrollable="true" scrollWidth="100%"
-                         id="produitTable"
+                         paginatorPosition="bottom"
                          selection="#{listProduitsMbean.selectedProduit}" rowKey="#{produit.id}">
+
+                <f:facet name="header">
+                    <div class="d-flex justify-content-between">
+                        <div style="font-weight: bold">Liste des Produits</div>
+                        <div class="filter-container ui-input-icon-left">
+                            <i class="pi pi-search"></i>
+                            <p:inputText id="globalFilter" onkeyup="PF('dtProducts').filter()" placeholder="Recherche avancée" />
+                        </div>
+                    </div>
+                </f:facet>
 
                 <p:ajax event="rowSelect" listener="#{listProduitsMbean.onRowSelect}" update="formid:produitDetail2"
                         oncomplete="PF('produitDialog').show()" />
 
-                <f:facet name="header">Liste des Produits</f:facet>
+<!--                <f:facet name="header">Liste des Produits</f:facet>-->
 
                 <p:column headerText="numero" style="width: 100px;"
                           sortBy="#{produit.id}" filterBy="#{produit.id}"> <!--numero=id-->
