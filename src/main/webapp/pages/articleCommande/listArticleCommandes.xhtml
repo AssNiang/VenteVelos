@@ -31,7 +31,7 @@
                     <p:message for="number" />
 
                     <p:outputLabel value="Commande" for="commande" />
-                    <p:selectOneMenu id="commande" value="#{listArticleCommandesMbean.selectedCommandeId}" required="true" requiredMessage="The command is required">
+                    <p:selectOneMenu id="commande" value="#{listArticleCommandesMbean.selectedCommandeId}" required="true" disabled="true" requiredMessage="The command is required">
                         <f:selectItems value="#{listArticleCommandesMbean.allCommandes}" var="commande" itemLabel="#{commande.client.prenom} n° (#{commande.numero})" itemValue="#{commande.numero}" />
                     </p:selectOneMenu>
                     <p:message for="commande" />

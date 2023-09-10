@@ -19,4 +19,11 @@ public class StockFacade extends AbstractFacade<Stock>{
     protected EntityManager getEntityManager() {
         return entityManager;
     }
+
+    public Stock find(Object idMag, Object idProd) {
+        return super.findAll().stream()
+                .filter(stock -> idMag.equals(stock.getMagasin().getId()) && idProd.equals(stock.getProduit().getId()))
+                .findAny()
+                .orElse(null);
+    }
 }

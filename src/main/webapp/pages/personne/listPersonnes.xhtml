@@ -47,7 +47,6 @@
             <p:dataTable var="personne" value="#{listPersonnesMbean.personnes}" selectionMode="single"
                          rows="12" paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
-                         paginatorPosition="bottom"
                          selection="#{listPersonnesMbean.selectedPersonne}" rowKey="#{personne.id}">
 
                 <f:facet name="header">Liste des Personnes</f:facet>
@@ -66,7 +65,6 @@
                     <p:commandButton ajax="false" value="Edit" action="#{listPersonnesMbean.setSelectedPersonne(personne)}" update=":formid:personneDetail" styleClass="ui-button-help me-2" process="@this" />
                     <p:commandButton ajax="false" value="Delete" action="#{listPersonnesMbean.delete(personne)}" styleClass="ui-button-danger" update=":formid" process="@this" />
                 </p:column>
-
             </p:dataTable>
 
         </p:panelGrid>

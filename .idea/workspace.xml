@@ -12,18 +12,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="Filtering, Sorting, Pagination with Products table using Datable in lazy mode.">
+    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="Recherche avancee">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/ApiRestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/MyResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ArticleCommandeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/CategorieResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ClientResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/CommandeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/MarqueResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ProduitResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/StockResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/AbstractFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/AbstractFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ArticleCommandeFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ArticleCommandeFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/StockFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/StockFacade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/listArticleCommandes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/listArticleCommandes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/categorie/listCategories.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/categorie/listCategories.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/client/listClients.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/listClients.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/commande/listCommandes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/listCommandes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/employe/listEmployes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/employe/listEmployes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/magasin/listMagasins.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/magasin/listMagasins.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/marque/listMarques.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/marque/listMarques.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/commande/addCommande.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/addCommande.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/personne/listPersonnes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personne/listPersonnes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/produit/listProduits.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/produit/listProduits.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/stock/listStocks.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/stock/listStocks.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +82,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/IdeaProjects/VenteVelos/src/main/webapp/pages/produit&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/IdeaProjects/projet1-jee-servlet&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -97,6 +102,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="sn.ept.git.dic2.ventevelos.webServiceResources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\pages\produit" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp" />
@@ -105,16 +113,16 @@
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\commande" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\pages" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\LENOVO\IdeaProjects\VenteVelos\src\main\webapp\personne" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sn.ept.git.dic2.ventevelos.api.webServiceResources" />
+      <recent name="sn.ept.git.dic2.ventevelos.webServiceResources" />
       <recent name="sn.ept.git.dic2.ventevelos.mbeans.stock" />
       <recent name="sn.ept.git.dic2.ventevelos.mbeans.articleCommande" />
       <recent name="sn.ept.git.dic2.ventevelos.converters" />
-      <recent name="sn.ept.git.dic2.ventevelos.mbeans.commande" />
-      <recent name="sn.ept.git.dic2.ventevelos.mbeans.employe" />
     </key>
   </component>
   <component name="RunManager" selected="GlassFish Server.GlassFish 7.0.0">
@@ -268,7 +276,9 @@
       <workItem from="1693921637134" duration="599000" />
       <workItem from="1693949372152" duration="2080000" />
       <workItem from="1693952533067" duration="1366000" />
-      <workItem from="1694122167347" duration="1768000" />
+      <workItem from="1694122167347" duration="4114000" />
+      <workItem from="1694255602382" duration="3950000" />
+      <workItem from="1694290587830" duration="24501000" />
     </task>
     <task id="LOCAL-00001" summary="21-08-2023 15:07">
       <created>1692630478732</created>
@@ -326,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693681917774</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Recherche avancee">
+      <created>1694124225795</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694124225795</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +358,8 @@
     <MESSAGE value="MBeans and pages for ArticleCommande and Stock added. Some other updates done." />
     <MESSAGE value="Adding the menu for navigation" />
     <MESSAGE value="Filtering, Sorting, Pagination with Products table using Datable in lazy mode." />
-    <option name="LAST_COMMIT_MESSAGE" value="Filtering, Sorting, Pagination with Products table using Datable in lazy mode." />
+    <MESSAGE value="Recherche avancee" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recherche avancee" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
