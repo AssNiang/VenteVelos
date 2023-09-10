@@ -1,5 +1,9 @@
 package sn.ept.git.dic2.ventevelos.api.webServiceResources;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.ejb.EJB;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -10,7 +14,7 @@ import sn.ept.git.dic2.ventevelos.facades.CommandeFacade;
 
 import java.util.List;
 
-@Path("/commandes")
+@Path("/v1/commandes")
 public class CommandeResource {
 
     @EJB
@@ -65,6 +69,31 @@ public class CommandeResource {
     @DELETE
     @Path("{number}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Delete an order",
+            description = "Delete the order whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The order with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The order with the specified id is successfully deleted",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Order deleted",
+                                                            value = "{msg: The order 1 was deleted successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response delete(@PathParam("number") String number) {
         Commande commande = commandeFacade.find(Long.parseLong(number));
         if(commande == null) {

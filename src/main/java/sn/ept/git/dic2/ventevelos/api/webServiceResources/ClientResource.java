@@ -1,5 +1,9 @@
 package sn.ept.git.dic2.ventevelos.api.webServiceResources;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.ejb.EJB;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -10,7 +14,7 @@ import sn.ept.git.dic2.ventevelos.facades.ClientFacade;
 
 import java.util.List;
 
-@Path("/clients")
+@Path("/v1/clients")
 public class ClientResource {
 
     @EJB
@@ -65,6 +69,31 @@ public class ClientResource {
     @DELETE
     @Path("{number}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Delete a client",
+            description = "Delete the client whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The client with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The client with the specified id is successfully deleted",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Client deleted",
+                                                            value = "{msg: The client Moustapha was deleted successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response delete(@PathParam("number") String number) {
         Client client = clientFacade.find(Long.parseLong(number));
         if(client == null) {

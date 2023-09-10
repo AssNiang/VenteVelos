@@ -1,5 +1,9 @@
 package sn.ept.git.dic2.ventevelos.api.webServiceResources;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.ejb.EJB;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -10,7 +14,7 @@ import sn.ept.git.dic2.ventevelos.facades.ArticleCommandeFacade;
 
 import java.util.List;
 
-@Path("/articleCommandes")
+@Path("/v1/articleCommandes")
 public class ArticleCommandeResource {
 
     @EJB
@@ -65,13 +69,38 @@ public class ArticleCommandeResource {
     @DELETE
     @Path("{ligne}_{numComm}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Delete an ordered item",
+            description = "Delete the ordered item whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The ordered item with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The ordered item with the specified id is successfully deleted",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Ordered item deleted",
+                                                            value = "{msg: The ordered item number 1 of the order number 1 was deleted successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response delete(@PathParam("ligne") String ligne, @PathParam("numComm") String numComm) {
         ArticleCommande articleCommande = articleCommandeFacade.find(Long.parseLong(ligne), Long.parseLong(numComm));
         if(articleCommande == null) {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
         articleCommandeFacade.remove(articleCommande);
-        MyResponse myResponse = new MyResponse("The articleCommande " + articleCommande.getLigne() + " was deleted successfully.");
+        MyResponse myResponse = new MyResponse("The ordered item " + articleCommande.getLigne() + " of the order number " + numComm + " was deleted successfully.");
         return Response.status(Response.Status.OK).entity(myResponse).build();
     }
 }

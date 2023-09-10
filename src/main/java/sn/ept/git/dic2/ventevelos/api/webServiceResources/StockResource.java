@@ -1,5 +1,9 @@
 package sn.ept.git.dic2.ventevelos.api.webServiceResources;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.ejb.EJB;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -10,7 +14,7 @@ import sn.ept.git.dic2.ventevelos.facades.StockFacade;
 
 import java.util.List;
 
-@Path("/stocks")
+@Path("/v1/stocks")
 public class StockResource {
 
     @EJB
@@ -65,13 +69,38 @@ public class StockResource {
     @DELETE
     @Path("{numMag}_{numProd}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Delete a stock",
+            description = "Delete the stock whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The stock with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The stock with the specified id is successfully deleted",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Stock deleted",
+                                                            value = "{msg: The stock in the shop Shop-A of the product Product-A was deleted successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response delete(@PathParam("numMag") String numMag, @PathParam("numProd") String numProd) {
         Stock stock = stockFacade.find(Long.parseLong(numMag), Long.parseLong(numProd));
         if(stock == null) {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
         stockFacade.remove(stock);
-        MyResponse myResponse = new MyResponse("The stock " + stock.getMagasin().getNom() + '-' + stock.getProduit().getNom() + " was deleted successfully.");
+        MyResponse myResponse = new MyResponse("The stock in the shop " + stock.getMagasin().getNom() + " of the product " + stock.getProduit().getNom() + " was deleted successfully.");
         return Response.status(Response.Status.OK).entity(myResponse).build();
     }
 }
