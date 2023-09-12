@@ -22,6 +22,31 @@ public class CategorieResource {
 
     @POST
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Add a category",
+            description = "Add the given category",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The category with the specified id already exists"
+                    ),
+                    @ApiResponse(
+                            responseCode = "201",
+                            description = "The category is successfully added",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Category added",
+                                                            value = "{msg: The category number 1 was added successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response addCategorie(Categorie cat){
         Categorie tmp_categorie = categorieFacade.find(cat.getId());
 
@@ -36,6 +61,30 @@ public class CategorieResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get all categories",
+            description = "Get all categories",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Categories found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Categories found",
+                                                            value = "[{\n" +
+                                                                    "  \"id\": 1,\n" +
+                                                                    "  \"nom\": \"Children Bicycles\"\n" +
+                                                                    "}]"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public List<Categorie> getCategorieList () {
         return categorieFacade.findAll();
     }
@@ -44,6 +93,34 @@ public class CategorieResource {
     @GET
     @Path("{number}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get a category",
+            description = "Get the category whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The category with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The category with the specified id is found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Category found",
+                                                            value = "{\n" +
+                                                                    "  \"id\": 1,\n" +
+                                                                    "  \"nom\": \"Children Bicycles\"\n" +
+                                                                    "}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response find(@PathParam("number") String number) {
         Categorie categorie = categorieFacade.find(Long.parseLong(number));
         if(categorie == null) {
@@ -54,6 +131,31 @@ public class CategorieResource {
 
     @PUT
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Edit a category",
+            description = "Edit the category whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The category with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The category with the specified id is successfully edited",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Category edited",
+                                                            value = "{msg: The category number 1 was edited successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response editCategorie(Categorie cat){
         Categorie tmp_categorie = categorieFacade.find(cat.getId());
 

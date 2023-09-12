@@ -22,6 +22,31 @@ public class StockResource {
 
     @POST
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Add a stock",
+            description = "Add the given stock",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The stock with the specified id already exists"
+                    ),
+                    @ApiResponse(
+                            responseCode = "201",
+                            description = "The stock is successfully added",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Stock added",
+                                                            value = "{msg: The stock in the shop shop-A of the product product-A was added successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response addStock(Stock st){
         Stock tmp_stock = stockFacade.find(st.getMagasin().getId(), st.getProduit().getId());
 
@@ -36,6 +61,53 @@ public class StockResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get all stocks",
+            description = "Get all stocks",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Stocks found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Stocks found",
+                                                            value = "[{\n" +
+                                                                    "  \"magasin\": {\n" +
+                                                                    "    \"adresse\": \"PA-U25\",\n" +
+                                                                    "    \"code_zip\": \"SN\",\n" +
+                                                                    "    \"email\": \"magasin@ept.sn\",\n" +
+                                                                    "    \"etat\": \"Senegal\",\n" +
+                                                                    "    \"id\": 22,\n" +
+                                                                    "    \"nom\": \"nom-magasin\",\n" +
+                                                                    "    \"telephone\": \"771112233\",\n" +
+                                                                    "    \"ville\": \"Dakar\"\n" +
+                                                                    "  },\n" +
+                                                                    "  \"produit\": {\n" +
+                                                                    "    \"annee_model\": 2023,\n" +
+                                                                    "    \"categorie\": {\n" +
+                                                                    "      \"id\": 1,\n" +
+                                                                    "      \"nom\": \"Children Bicycles\"\n" +
+                                                                    "    },\n" +
+                                                                    "    \"id\": 1,\n" +
+                                                                    "    \"marque\": {\n" +
+                                                                    "      \"id\": 1,\n" +
+                                                                    "      \"nom\": \"Haro\"\n" +
+                                                                    "    },\n" +
+                                                                    "    \"nom\": \"nom produit\",\n" +
+                                                                    "    \"prix_depart\": 10.0\n" +
+                                                                    "  },\n" +
+                                                                    "  \"quantite\": 10\n" +
+                                                                    "}]"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public List<Stock> getStockList () {
         return stockFacade.findAll();
     }
@@ -44,6 +116,57 @@ public class StockResource {
     @GET
     @Path("{numMag}_{numProd}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get a stock",
+            description = "Get the stock whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The stock with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The stock with the specified id is found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Stock found",
+                                                            value = "{\n" +
+                                                                    "  \"magasin\": {\n" +
+                                                                    "    \"adresse\": \"PA-U25\",\n" +
+                                                                    "    \"code_zip\": \"SN\",\n" +
+                                                                    "    \"email\": \"magasin@ept.sn\",\n" +
+                                                                    "    \"etat\": \"Senegal\",\n" +
+                                                                    "    \"id\": 22,\n" +
+                                                                    "    \"nom\": \"nom-magasin\",\n" +
+                                                                    "    \"telephone\": \"771112233\",\n" +
+                                                                    "    \"ville\": \"Dakar\"\n" +
+                                                                    "  },\n" +
+                                                                    "  \"produit\": {\n" +
+                                                                    "    \"annee_model\": 2023,\n" +
+                                                                    "    \"categorie\": {\n" +
+                                                                    "      \"id\": 1,\n" +
+                                                                    "      \"nom\": \"Children Bicycles\"\n" +
+                                                                    "    },\n" +
+                                                                    "    \"id\": 1,\n" +
+                                                                    "    \"marque\": {\n" +
+                                                                    "      \"id\": 1,\n" +
+                                                                    "      \"nom\": \"Haro\"\n" +
+                                                                    "    },\n" +
+                                                                    "    \"nom\": \"nom produit\",\n" +
+                                                                    "    \"prix_depart\": 10.0\n" +
+                                                                    "  },\n" +
+                                                                    "  \"quantite\": 10\n" +
+                                                                    "}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response find(@PathParam("numMag") String numMag, @PathParam("numProd") String numProd) {
         Stock stock = stockFacade.find(Long.parseLong(numMag), Long.parseLong(numProd));
         if(stock == null) {
@@ -54,6 +177,31 @@ public class StockResource {
 
     @PUT
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Edit a stock",
+            description = "Edit the stock whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The stock with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The stock with the specified id is successfully edited",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Stock edited",
+                                                            value = "{msg: The stock in the shop shop-A of the product product-A was edited successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response editStock(Stock st){
         Stock tmp_stock = stockFacade.find(st.getMagasin().getId(), st.getProduit().getId());
 

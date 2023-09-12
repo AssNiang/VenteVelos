@@ -22,6 +22,31 @@ public class MarqueResource {
 
     @POST
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Add a mark",
+            description = "Add the given mark",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The mark with the specified id already exists"
+                    ),
+                    @ApiResponse(
+                            responseCode = "201",
+                            description = "The mark is successfully added",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Mark added",
+                                                            value = "{msg: The mark number 1 was added successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response addMarque(Marque marq) {
         Marque tmp_marque = marqueFacade.find(marq.getId());
 
@@ -36,6 +61,30 @@ public class MarqueResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get all marks",
+            description = "Get all marks",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Marks found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Marks found",
+                                                            value = "[{\n" +
+                                                                    "  \"id\": 1,\n" +
+                                                                    "  \"nom\": \"Haro\"\n" +
+                                                                    "}]"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public List<Marque> getMarqueList() {
         return marqueFacade.findAll();
     }
@@ -44,6 +93,34 @@ public class MarqueResource {
     @GET
     @Path("{number}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get a mark",
+            description = "Get the mark whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The mark with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The mark with the specified id is found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Mark found",
+                                                            value = "{\n" +
+                                                                    "  \"id\": 1,\n" +
+                                                                    "  \"nom\": \"Haro\"\n" +
+                                                                    "}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response find(@PathParam("number") String number) {
         Marque marque = marqueFacade.find(Long.parseLong(number));
         if (marque == null) {
@@ -54,6 +131,31 @@ public class MarqueResource {
 
     @PUT
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Edit a mark",
+            description = "Edit the mark whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The mark with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The mark with the specified id is successfully edited",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Mark edited",
+                                                            value = "{msg: The mark number 1 was edited successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response editMarque(Marque marq) {
         Marque tmp_marque = marqueFacade.find(marq.getId());
 

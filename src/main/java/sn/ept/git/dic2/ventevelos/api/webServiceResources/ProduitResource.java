@@ -22,6 +22,31 @@ public class ProduitResource {
 
     @POST
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Add a product",
+            description = "Add the given product",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The product with the specified id already exists"
+                    ),
+                    @ApiResponse(
+                            responseCode = "201",
+                            description = "The product is successfully added",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Product added",
+                                                            value = "{msg: The product number 1 was added successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response addProduit(Produit prod){
         Produit tmp_produit = produitFacade.find(prod.getId());
 
@@ -36,6 +61,40 @@ public class ProduitResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get all products",
+            description = "Get all products",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Products found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Products found",
+                                                            value = "[{\n" +
+                                                                    "  \"annee_model\": 2023,\n" +
+                                                                    "  \"categorie\": {\n" +
+                                                                    "    \"id\": 1,\n" +
+                                                                    "    \"nom\": \"Children Bicycles\"\n" +
+                                                                    "  },\n" +
+                                                                    "  \"id\": 1,\n" +
+                                                                    "  \"marque\": {\n" +
+                                                                    "    \"id\": 1,\n" +
+                                                                    "    \"nom\": \"Haro\"\n" +
+                                                                    "  },\n" +
+                                                                    "  \"nom\": \"nom produit\",\n" +
+                                                                    "  \"prix_depart\": 10.0\n" +
+                                                                    "}]"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public List<Produit> getProduitList () {
         return produitFacade.findAll();
     }
@@ -44,6 +103,44 @@ public class ProduitResource {
     @GET
     @Path("{number}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get a product",
+            description = "Get the product whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The product with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The product with the specified id is found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Product found",
+                                                            value = "{\n" +
+                                                                    "  \"annee_model\": 2023,\n" +
+                                                                    "  \"categorie\": {\n" +
+                                                                    "    \"id\": 1,\n" +
+                                                                    "    \"nom\": \"Children Bicycles\"\n" +
+                                                                    "  },\n" +
+                                                                    "  \"id\": 1,\n" +
+                                                                    "  \"marque\": {\n" +
+                                                                    "    \"id\": 1,\n" +
+                                                                    "    \"nom\": \"Haro\"\n" +
+                                                                    "  },\n" +
+                                                                    "  \"nom\": \"nom produit\",\n" +
+                                                                    "  \"prix_depart\": 10.0\n" +
+                                                                    "}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response find(@PathParam("number") String number) {
         Produit produit = produitFacade.find(Long.parseLong(number));
         if(produit == null) {
@@ -54,6 +151,31 @@ public class ProduitResource {
 
     @PUT
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Edit a product",
+            description = "Edit the product whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The product with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The product with the specified id is successfully edited",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Product edited",
+                                                            value = "{msg: The product number 1 was edited successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response editProduit(Produit prod){
         Produit tmp_produit = produitFacade.find(prod.getId());
 

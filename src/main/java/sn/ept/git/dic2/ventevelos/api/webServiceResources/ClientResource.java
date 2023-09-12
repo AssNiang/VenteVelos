@@ -22,6 +22,31 @@ public class ClientResource {
 
     @POST
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Add a client",
+            description = "Add the given client",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The client with the specified id already exists"
+                    ),
+                    @ApiResponse(
+                            responseCode = "201",
+                            description = "The client is successfully added",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Client added",
+                                                            value = "{msg: The client number 1 was added successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response addClient(Client c){
         Client tmp_client = clientFacade.find(c.getId());
 
@@ -36,6 +61,37 @@ public class ClientResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get all clients",
+            description = "Get all clients",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Clients found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Clients found",
+                                                            value = "[{\n" +
+                                                                    "  \"id\": 22,\n" +
+                                                                    "  \"nom\": \"NIANG\",\n" +
+                                                                    "  \"prenom\": \"Ass Malick\",\n" +
+                                                                    "  \"adresse\": \"PA-U25\",\n" +
+                                                                    "  \"code_zip\": \"SN\",\n" +
+                                                                    "  \"email\": \"nianga@ept.sn\",\n" +
+                                                                    "  \"etat\": \"Senegal\",\n" +
+                                                                    "  \"telephone\": \"772914064\",\n" +
+                                                                    "  \"ville\": \"Dakar\"\n" +
+                                                                    "}]"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public List<Client> getClientList () {
         return clientFacade.findAll();
     }
@@ -44,6 +100,41 @@ public class ClientResource {
     @GET
     @Path("{number}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Get a client",
+            description = "Get the client whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The client with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The client with the specified id is found",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Client found",
+                                                            value = "{\n" +
+                                                                    "  \"id\": 22,\n" +
+                                                                    "  \"nom\": \"NIANG\",\n" +
+                                                                    "  \"prenom\": \"Ass Malick\",\n" +
+                                                                    "  \"adresse\": \"PA-U25\",\n" +
+                                                                    "  \"code_zip\": \"SN\",\n" +
+                                                                    "  \"email\": \"nianga@ept.sn\",\n" +
+                                                                    "  \"etat\": \"Senegal\",\n" +
+                                                                    "  \"telephone\": \"772914064\",\n" +
+                                                                    "  \"ville\": \"Dakar\"\n" +
+                                                                    "}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response find(@PathParam("number") String number) {
         Client client = clientFacade.find(Long.parseLong(number));
         if(client == null) {
@@ -54,6 +145,31 @@ public class ClientResource {
 
     @PUT
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Operation(
+            summary = "Edit a client",
+            description = "Edit the client whose id match the given one as parameter",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "The client with the specified id is not found"
+                    ),
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "The client with the specified id is successfully edited",
+                            content = {
+                                    @Content(
+                                            mediaType = MediaType.APPLICATION_JSON,
+                                            examples = {
+                                                    @ExampleObject(
+                                                            name = "Client edited",
+                                                            value = "{msg: The client number 1 was edited successfully.}"
+                                                    )
+                                            }
+                                    )
+                            }
+                    )
+            }
+    )
     public Response editClient(Client c){
         Client tmp_client = clientFacade.find(c.getId());
 

@@ -12,28 +12,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="for web services, definition of resources for &quot;Categorie, Marque, Client, ArticleCommande, Commande, Produit, Stock&quot;   &amp; &quot;find()&quot; method definition for &quot;articleCommande&quot; and &quot;stock&quot; because of their 2 IDs.">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/oauth2-redirect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-initializer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui-bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui-bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui-es-bundle-core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui-es-bundle-core.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui-es-bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui-es-bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui-standalone-preset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui-standalone-preset.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/docs/swagger-ui.js.map" afterDir="false" />
+    <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="Documentation with swagger ongoing...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/ApiRestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/ApiRestConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ArticleCommandeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ArticleCommandeResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/CategorieResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/CategorieResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ClientResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ClientResource.java" afterDir="false" />
@@ -88,31 +68,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/VenteVelos/src/main/webapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/IdeaProjects/VenteVelos/src/main/webapp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="sn.ept.git.dic2.ventevelos.webServiceResources" />
@@ -290,7 +270,9 @@
       <workItem from="1693952533067" duration="1366000" />
       <workItem from="1694122167347" duration="4114000" />
       <workItem from="1694255602382" duration="3950000" />
-      <workItem from="1694290587830" duration="33766000" />
+      <workItem from="1694290587830" duration="33919000" />
+      <workItem from="1694471189614" duration="1216000" />
+      <workItem from="1694544432918" duration="13277000" />
     </task>
     <task id="LOCAL-00001" summary="21-08-2023 15:07">
       <created>1692630478732</created>
@@ -362,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694372039965</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Documentation with swagger ongoing...">
+      <created>1694388027603</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694388027603</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +368,8 @@
     <MESSAGE value="Filtering, Sorting, Pagination with Products table using Datable in lazy mode." />
     <MESSAGE value="Recherche avancee" />
     <MESSAGE value="for web services, definition of resources for &quot;Categorie, Marque, Client, ArticleCommande, Commande, Produit, Stock&quot;   &amp; &quot;find()&quot; method definition for &quot;articleCommande&quot; and &quot;stock&quot; because of their 2 IDs." />
-    <option name="LAST_COMMIT_MESSAGE" value="for web services, definition of resources for &quot;Categorie, Marque, Client, ArticleCommande, Commande, Produit, Stock&quot;   &amp; &quot;find()&quot; method definition for &quot;articleCommande&quot; and &quot;stock&quot; because of their 2 IDs." />
+    <MESSAGE value="Documentation with swagger ongoing..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation with swagger ongoing..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
