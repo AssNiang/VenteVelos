@@ -120,8 +120,7 @@ public class ClientResource {
                                                             value = "{\n" +
                                                                     "  \"id\": 22,\n" +
                                                                     "  \"nom\": \"NIANG\",\n" +
-                                                                    "  \"prenom\": \"Ass Malick\",\n" +
-                                                                    "  \"adresse\": \"PA-U25\",\n" +
+                                                                    "  \"prenom\": \"Ass Malick\",\n" + "  \"adresse\": \"PA-U25\",\n" +
                                                                     "  \"code_zip\": \"SN\",\n" +
                                                                     "  \"email\": \"nianga@ept.sn\",\n" +
                                                                     "  \"etat\": \"Senegal\",\n" +
