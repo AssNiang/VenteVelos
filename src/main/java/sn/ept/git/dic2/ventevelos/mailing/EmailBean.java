@@ -21,6 +21,7 @@ public class EmailBean {
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", host);
         props.put("mail.smtp.port", "587"); // Port SMTP standard pour TLS
+        props.put("mail.smtp.ssl.trust", "*");
 
         // Création de la session de messagerie avec l'authentification
         Session session = Session.getInstance(props, new Authenticator() {

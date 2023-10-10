@@ -13,97 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82b973d4-4be0-476b-ae2b-a1955d7a7c9e" name="Changes" comment="Documentation with swagger.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/CorsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/EmployeResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/ApiRestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/ApiRestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/MyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/MyResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ArticleCommandeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ArticleCommandeResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/CategorieResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/CategorieResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ClientResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ClientResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/CommandeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/CommandeResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/MarqueResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/MarqueResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ProduitResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/ProduitResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/StockResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/api/webServiceResources/StockResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/ArticleCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/ArticleCommande.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Categorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Categorie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Commande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Commande.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Employe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Magasin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Magasin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Marque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Marque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Personne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Produit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/entities/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ArticleCommandeFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ArticleCommandeFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CategorieFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CategorieFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ClientFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ClientFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CommandeFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/CommandeFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/EmployeFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/EmployeFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/MagasinFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/MagasinFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/MarqueFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/MarqueFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/PersonneFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/PersonneFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ProduitFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/ProduitFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/StockFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/facades/StockFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitCategorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitCategorie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitMarque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitMarque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitPersonne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitPersonne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitProduit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitProduit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/initializations/InitStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/ApplicationLifeCycleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/ApplicationLifeCycleBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/EmailBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/EmailBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/StockReportBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mailing/StockReportBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/articleCommande/AddArticleCommandeMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/articleCommande/AddArticleCommandeMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/articleCommande/ListArticleCommandesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/articleCommande/ListArticleCommandesMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/AddCategorieMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/AddCategorieMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/ListCategoriesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/categorie/ListCategoriesMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/AddClientMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/AddClientMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/ListClientsMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/client/ListClientsMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/commande/AddCommandeMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/commande/AddCommandeMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/commande/ListCommandesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/commande/ListCommandesMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/AddEmployeMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/ListEmployesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/employe/ListEmployesMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/AddMagasinMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/AddMagasinMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/ListMagasinsMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/magasin/ListMagasinsMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/AddMarqueMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/AddMarqueMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/ListMarquesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/marque/ListMarquesMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/AddPersonneMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/AddPersonneMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/ListPersonnesMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/personne/ListPersonnesMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/AddProduitMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/AddProduitMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/produit/ListProduitsMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/stock/AddStockMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/stock/AddStockMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/stock/ListStocksMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dic2/ventevelos/mbeans/stock/ListStocksMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menu.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menu.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ok.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ok.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/addArticleCommande.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/addArticleCommande.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/listArticleCommandes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/articleCommande/listArticleCommandes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/categorie/addCategorie.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/categorie/addCategorie.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/categorie/listCategories.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/categorie/listCategories.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/client/addClient.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/addClient.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/client/listClients.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/listClients.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/commande/addCommande.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/addCommande.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/commande/listCommandes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/commande/listCommandes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/employe/addEmploye.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/employe/addEmploye.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/employe/listEmployes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/employe/listEmployes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/magasin/addMagasin.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/magasin/addMagasin.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/magasin/listMagasins.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/magasin/listMagasins.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/marque/addMarque.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/marque/addMarque.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/marque/listMarques.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/marque/listMarques.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/personne/addPersonne.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personne/addPersonne.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/personne/listPersonnes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personne/listPersonnes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/produit/addProduit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/produit/addProduit.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/produit/listProduits.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/produit/listProduits.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/stock/addStock.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/stock/addStock.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/stock/listStocks.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/stock/listStocks.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,12 +32,20 @@
         <option value="jsf" />
         <option value="facelets" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="namespacesByContext">
+      <map>
+        <entry key="demo/api-crc-testing:6443/kubeadmin" value="default" />
+      </map>
+    </option>
   </component>
   <component name="KubernetesSettings">
     <option name="contextName" value="minikube" />
@@ -382,7 +303,11 @@
       <workItem from="1696445729934" duration="917000" />
       <workItem from="1696490810792" duration="451000" />
       <workItem from="1696538652767" duration="5271000" />
-      <workItem from="1696674327142" duration="459000" />
+      <workItem from="1696674327142" duration="3007000" />
+      <workItem from="1696695194862" duration="2319000" />
+      <workItem from="1696769975806" duration="4411000" />
+      <workItem from="1696936871387" duration="5000" />
+      <workItem from="1696979161503" duration="2642000" />
     </task>
     <task id="LOCAL-00001" summary="21-08-2023 15:07">
       <created>1692630478732</created>
@@ -468,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694563103615</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Documentation with swagger.">
+      <option name="closed" value="true" />
+      <created>1696674914800</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696674914800</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
